@@ -1,0 +1,2547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Buildings>
+
+<!--============================== Beds ==============================-->
+  
+	<ThingDef ParentName="BedBase">
+		<defName>Bed</defName>
+		<Label>bed</Label>
+		<Description>A cozy mattress and sheets on a frame for resting.</Description>
+    <graphicData>
+		<texPath>Things/Building/Bed</texPath>
+    </graphicData>
+	</ThingDef>
+  
+	<ThingDef ParentName="BedBase">
+		<defName>BedRed</defName>
+		<Label>bed (red)</Label>
+		<Description>A cozy mattress and red sheets on a frame for resting.</Description>
+    <graphicData>
+		<texPath>Things/Building/BedRed</texPath>
+    </graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BedBase">
+		<defName>BedYellow</defName>
+		<Label>bed (yellow)</Label>
+		<Description>A cozy mattress and yellow sheets on a frame for resting.</Description>
+    <graphicData>
+		<texPath>Things/Building/BedYellow</texPath>
+    </graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BedBase">
+		<defName>BedGreen</defName>
+		<Label>bed (green)</Label>
+		<Description>A cozy mattress and green sheets on a frame for resting.</Description>
+    <graphicData>
+		<texPath>Things/Building/BedGreen</texPath>
+    </graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BedBase">
+		<defName>BedBlue</defName>
+		<Label>bed (blue)</Label>
+		<Description>A cozy mattress and blue sheets on a frame for resting.</Description>
+    <graphicData>
+		<texPath>Things/Building/BedBlue</texPath>
+    </graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BedBase">
+		<defName>BedPurple</defName>
+		<Label>bed (purple)</Label>
+		<Description>A cozy mattress and purple sheets on a frame for resting.</Description>
+    <graphicData>
+		<texPath>Things/Building/BedPurple</texPath>
+    </graphicData>
+	</ThingDef> 
+  
+	<ThingDef ParentName="DoubleBedBase">
+		<defName>DoubleBed</defName>
+		<Label>double bed</Label>
+		<Description>A simple double-wide bed that fits two people.</Description>
+    <graphicData>
+		<texPath>Things/Building/DoubleBed</texPath>
+    </graphicData>
+	</ThingDef>
+  
+	<ThingDef ParentName="DoubleBedBase">
+		<defName>DoubleBedRed</defName>
+		<Label>double bed (red)</Label>
+		<Description>A simple double-wide bed that fits two people. Red sheets.</Description>
+    <graphicData>
+		<texPath>Things/Building/DoubleBedRed</texPath>
+    </graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DoubleBedBase">
+		<defName>DoubleBedYellow</defName>
+		<Label>double bed (yellow)</Label>
+		<Description>A simple double-wide bed that fits two people. Yellow sheets.</Description>
+    <graphicData>
+		<texPath>Things/Building/DoubleBedYellow</texPath>
+    </graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="DoubleBedBase">
+		<defName>DoubleBedGreen</defName>
+		<Label>double bed (green)</Label>
+		<Description>A simple double-wide bed that fits two people. Green sheets.</Description>
+    <graphicData>
+		<texPath>Things/Building/DoubleBedGreen</texPath>
+    </graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="DoubleBedBase">
+		<defName>DoubleBedBlue</defName>
+		<Label>double bed (blue)</Label>
+		<Description>A simple double-wide bed that fits two people. Blue sheets.</Description>
+    <graphicData>
+		<texPath>Things/Building/DoubleBedBlue</texPath>
+    </graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="DoubleBedBase">
+		<defName>DoubleBedPurple</defName>
+		<Label>double bed (purple)</Label>
+		<Description>A simple double-wide bed that fits two people. Purple sheets.</Description>
+    <graphicData>
+		<texPath>Things/Building/DoubleBedPurple</texPath>
+    </graphicData>
+	</ThingDef>  
+  
+	<ThingDef ParentName="RoyalBedBase">
+		<defName>RoyalBed</defName>
+		<label>royal bed</label>
+		<Description>A luxurious gold-inlaid bed fit for the highborn. Very comfy and beautiful. Fits two.</Description>
+		<graphicData>
+			<texPath>Things/Building/RoyalBedRed</texPath>
+		</graphicData>
+	</ThingDef> 
+  
+	<ThingDef ParentName="RoyalBedBase">
+		<defName>RoyalBedRed</defName>
+		<label>royal bed (red)</label>
+		<Description>A luxurious bed fit for the highborn, topped with crisp red sheets.</Description>
+		<graphicData>
+			<texPath>Things/Building/RoyalBedRed</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="RoyalBedBase">
+		<defName>RoyalBedYellow</defName>
+		<label>royal bed (yellow)</label>
+		<Description>A luxurious bed fit for the highborn, topped with crisp yellow sheets.</Description>
+		<graphicData>
+			<texPath>Things/Building/RoyalBedYellow</texPath>
+		</graphicData>
+	</ThingDef>
+		
+	<ThingDef ParentName="RoyalBedBase">
+		<defName>RoyalBedRedGreen</defName>
+		<label>royal bed (green)</label>
+		<Description>A luxurious bed fit for the highborn, topped with crisp green sheets.</Description>
+		<graphicData>
+			<texPath>Things/Building/RoyalBedGreen</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="RoyalBedBase">
+		<defName>RoyalBedRedBlue</defName>
+		<label>royal bed (blue)</label>
+		<Description>A luxurious bed fit for the highborn, topped with crisp blue sheets.</Description>
+		<graphicData>
+			<texPath>Things/Building/RoyalBedBlue</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="RoyalBedBase">
+		<defName>RoyalBedRedPurple</defName>
+		<label>royal bed (purple)</label>
+		<Description>A luxurious bed fit for the highborn, topped with crisp purple sheets.</Description>
+		<graphicData>
+			<texPath>Things/Building/RoyalBedPurple</texPath>
+		</graphicData>
+	</ThingDef>  
+  
+	<ThingDef ParentName="FurnitureBase">
+		<defName>HospitalBed</defName>
+		<label>hospital bed</label>
+		<Description>A bed specially designed for injured people. Improves chance of successful medical work.</Description>
+		<ThingClass>Building_Bed</ThingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Bed/HospitalBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>2850</WorkToBuild>
+			<Mass>45</Mass>
+			<Flammability>1.0</Flammability>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<Comfort>0.80</Comfort>
+			<ImmunityGainSpeedFactor>1.144</ImmunityGainSpeedFactor>
+			<MedicalTendQualityOffset>0.10</MedicalTendQualityOffset>
+		</statBases>
+		<Size>(1,2)</Size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<Steel>80</Steel>
+			<Medicine>10</Medicine>
+		</costList>
+		<building>
+			<Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+			<bed_healPerDay>12</bed_healPerDay>
+			<bed_defaultMedical>true</bed_defaultMedical>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ANON2Dresser</li>
+					<li>ANON2EndTable</li>
+					<li>ANON2EndTableLight</li>				
+					<li>sd_medicaddons_medieval_surg_washpan</li>  
+					<li>sd_medicaddons_medieval_surg_instruments</li>
+					<li>sd_medicaddons_medieval_surg_lamp</li>
+					<li>sd_medicaddons_industrial_surg_instruments</li>
+					<li>sd_medicaddons_industrial_surg_lamp</li>
+					<li>VitalsMonitor</li>
+					<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+					<li>sd_medicaddons_spacer_surg_instruments</li>
+					<li>sd_medicaddons_spacer_surg_lamp</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+		<fillPercent>0.4</fillPercent>
+		<PathCost>60</PathCost>
+		<LeaveResourcesWhenKilled>True</LeaveResourcesWhenKilled>
+		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+		<CastEdgeShadows>True</CastEdgeShadows>
+		<designationHotkey>Misc5</designationHotkey>
+		<Passability>PassThroughOnly</Passability>
+		<DrawGUIOverlay>True</DrawGUIOverlay>
+		<researchPrerequisites><li>HospitalBed</li></researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>  
+  
+	<ThingDef ParentName="FurnitureBase">
+		<defName>GuestBed</defName>
+		<label>guest bed</label>
+		<Description>A place for guests to sleep during their stay.</Description>
+		<ThingClass>Hospitality.Building_GuestBed</ThingClass>
+		<graphicData>
+			<texPath>Things/Building/Bed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,4)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<WorkToBuild>870</WorkToBuild>
+			<Mass>50</Mass>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<Comfort>0.75</Comfort>
+			<ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+		</statBases>
+		<Size>(1,2)</Size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<building>
+			<Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+			<bed_healPerDay>7</bed_healPerDay>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ANON2Dresser</li>
+					<li>ANON2EndTable</li>
+					<li>ANON2EndTableLight</li>				
+					<li>sd_medicaddons_medieval_surg_washpan</li>  
+					<li>sd_medicaddons_medieval_surg_instruments</li>
+					<li>sd_medicaddons_medieval_surg_lamp</li>
+					<li>sd_medicaddons_industrial_surg_instruments</li>
+					<li>sd_medicaddons_industrial_surg_lamp</li>
+					<li>VitalsMonitor</li>
+					<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+					<li>sd_medicaddons_spacer_surg_instruments</li>
+					<li>sd_medicaddons_spacer_surg_lamp</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+		<fillPercent>0.4</fillPercent>
+		<PathCost>60</PathCost>
+		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+		<CastEdgeShadows>True</CastEdgeShadows>
+		<Passability>PassThroughOnly</Passability>
+		<DrawGUIOverlay>True</DrawGUIOverlay>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<costList>
+			<Cloth>12</Cloth>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="AnimalFeedTroughBase">	
+		<defName>AnimalFeedTrough</defName>
+		<label>Animal Feed Trough</label>
+		<description>Designated storage area for animal feed.</description>
+		<graphicData>
+			<texPath>Things/Storage/AnimalFeedTrough/AnimalFeedTrough</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-3</Cleanliness>
+		</statBases>
+		<size>(1,4)</size>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<building>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+						<li>Kibble</li>
+						<li>Silage</li>
+					</thingDefs>
+					<disallowedSpecialFilters>
+						<li>AllowRotten</li>
+					</disallowedSpecialFilters>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationCategory>Furniture</designationCategory>
+	</ThingDef>
+	
+	<ThingDef ParentName="BarnStallBase">
+		<defName>BarnStall</defName>
+		<label>barn stall</label>
+		<description>A stall for your barn animals. Fits any animal.</description>
+		<rotatable>true</rotatable>
+		<PathCost>40</PathCost>
+		<CastEdgeShadows>true</CastEdgeShadows>
+		<graphicData>
+			<texPath>Things/Building/BarnStall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.1,2.1</drawSize>
+		</graphicData>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<Size>(2,2)</Size>
+		<building>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_ShowSleeperBody>true</bed_ShowSleeperBody>
+			<bed_healPerDay>10</bed_healPerDay>
+		</building>
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>600</WorkToBuild>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<Comfort>0.95</Comfort>
+			<ImmunityGainSpeedFactor>1.5</ImmunityGainSpeedFactor>
+		</statBases>
+		<designationCategory>Furniture</designationCategory>
+	</ThingDef>
+	
+<!--============================== Chairs ==============================-->		
+	
+	<ThingDef ParentName="Anon2ArtableFurnitureBase">
+		<defName>ANON2SquareDiningChair</defName>
+		<label>square dining chair</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/SeatingStuff/SquareChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>170</MaxHitPoints>
+			<WorkToBuild>6000</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>7</Beauty>
+			<Comfort>0.70</Comfort>
+		</statBases>
+		<description>A comfortable and attractive chair for sitting at a table.</description>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.35</fillPercent>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="Anon2FurnitureBase">
+		<defName>ANON2CushionedChair</defName>
+		<label>cushioned chair</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/SeatingStuff/CushionedChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<WorkToBuild>7500</WorkToBuild>
+			<Mass>6</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<Comfort>0.73</Comfort>
+		</statBases>
+		<description>A large, soft, comfy seat. Great for relaxation and dining.</description>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="Anon2FurnitureBase">
+		<defName>ANON2CouchRight</defName>
+		<label>couch right</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/SeatingStuff/CouchR</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(0.6, 0.6, 0.6)</volume>
+			</shadowData>
+			<damageData>
+				<rectN>(0,0,1,0.703125)</rectN>
+				<rectS>(0.09375,0,0.84375,1)</rectS>
+				<rectE>(0,0,0.84375,0.625)</rectE>
+				<rectW>(0.15625,0,0.84375,0.625)</rectW>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<WorkToBuild>7500</WorkToBuild>
+			<Mass>18</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+			<Comfort>0.8</Comfort>
+		</statBases>
+		<description>A piece of a large, soft, comfy sofa. Great for relaxation.</description>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="Anon2FurnitureBase">
+		<defName>ANON2CouchCenter</defName>
+		<label>couch center</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/SeatingStuff/CouchC</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(0.6, 0.6, 0.6)</volume>
+			</shadowData>
+			<damageData>
+				<rectN>(0,0,1,0.703125)</rectN>
+				<rectS>(0.09375,0,0.84375,1)</rectS>
+				<rectE>(0,0,0.84375,0.625)</rectE>
+				<rectW>(0.15625,0,0.84375,0.625)</rectW>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<WorkToBuild>7500</WorkToBuild>
+			<Mass>18</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+			<Comfort>0.8</Comfort>
+		</statBases>
+		<description>A piece of a large, soft, comfy sofa. Great for relaxation.</description>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="Anon2FurnitureBase">
+		<defName>ANON2CouchLeft</defName>
+		<label>couch left</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/SeatingStuff/CouchL</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(0.6, 0.6, 0.6)</volume>
+			</shadowData>
+			<damageData>
+				<rectN>(0,0,1,0.703125)</rectN>
+				<rectS>(0.09375,0,0.84375,1)</rectS>
+				<rectE>(0,0,0.84375,0.625)</rectE>
+				<rectW>(0.15625,0,0.84375,0.625)</rectW>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<WorkToBuild>7500</WorkToBuild>
+			<Mass>18</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+			<Comfort>0.8</Comfort>
+		</statBases>
+		<description>A piece of a large, soft, comfy sofa. Great for relaxation.</description>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+		<designationCategory>Furniture</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="Anon2FurnitureBase">
+		<defName>ANON2CouchCorner</defName>
+		<label>couch corner</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/SeatingStuff/CouchCorner</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(0.6, 0.6, 0.6)</volume>
+			</shadowData>
+			<damageData>
+				<rectN>(0,0,1,0.703125)</rectN>
+				<rectS>(0.09375,0,0.84375,1)</rectS>
+				<rectE>(0,0,0.84375,0.625)</rectE>
+				<rectW>(0.15625,0,0.84375,0.625)</rectW>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<WorkToBuild>7500</WorkToBuild>
+			<Mass>18</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+			<Comfort>0.8</Comfort>
+		</statBases>
+		<description>A piece of a large, soft, comfy sofa. Great for relaxation.</description>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="Anon2FurnitureBase">
+		<defName>CouchCornerInv</defName>
+		<label>couch corner Inverted</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/SeatingStuff/CouchCornerInv</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(0.6, 0.6, 0.6)</volume>
+			</shadowData>
+			<damageData>
+				<rectN>(0,0,1,0.703125)</rectN>
+				<rectS>(0.09375,0,0.84375,1)</rectS>
+				<rectE>(0,0,0.84375,0.625)</rectE>
+				<rectW>(0.15625,0,0.84375,0.625)</rectW>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<WorkToBuild>7500</WorkToBuild>
+			<Mass>18</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+			<Comfort>0.8</Comfort>
+		</statBases>
+		<description>A piece of a large, soft, comfy sofa. Great for relaxation.</description>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>StoolLinkable</defName>
+		<label>linkable stool</label>
+		<uiIconPath>Tables/chair_menuicon</uiIconPath>
+		<graphicData>
+			<texPath>Tables/chairlink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom2</li>
+			</linkFlags>
+			<shadowData>
+				<volume>(0.3, 0.3, 0.6)</volume>
+			</shadowData>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+			<Comfort>0.5</Comfort>
+		</statBases>
+		<description>People sit here.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<pathCost>30</pathCost>
+		<designationCategory>Furniture</designationCategory>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+			<building>
+				<isSittable>true</isSittable>
+			</building>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+	</ThingDef>	
+	
+<!--============================== Tables ==============================-->	
+
+	<ThingDef ParentName="Anon2TableBase">
+		<defName>Anon2TableSmall</defName>
+		<label>table (small)</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/TableStuff/TableSmall</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+			<damageData>
+				<rect>(0.05,0.27,1.9,1.73)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>6</Beauty>
+			<Mass>5</Mass>
+		</statBases>
+		<size>(2,1)</size>
+		<costStuffCount>30</costStuffCount>
+		<rotatable>true</rotatable>
+	</ThingDef>
+
+	<ThingDef ParentName="Anon2TableBase">
+		<defName>Anon2TableTiny</defName>
+		<label>table (tiny)</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/TableStuff/TableTiny</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.05,0.27,1.9,1.73)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+			<Mass>3</Mass>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>15</costStuffCount>
+		<rotatable>false</rotatable>
+	</ThingDef>
+
+	<ThingDef ParentName="Anon2TableBase">
+		<defName>Anon2RoundedTableLong</defName>
+		<label>rounded table (long)</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/TableStuff/RoundedTableLong</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,6)</drawSize>
+			<damageData>
+				<rectN>(0,0.27,2,3.73)</rectN>
+				<rectS>(0,0.27,2,3.73)</rectS>
+				<rectE>(0.125,0.27,3.75,1.73)</rectE>
+				<rectW>(0.125,0.27,3.75,1.73)</rectW>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>2950</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>12</Beauty>
+			<Mass>18</Mass>
+		</statBases>
+		<size>(2,4)</size>
+		<costStuffCount>95</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="Anon2TableBase">
+		<defName>Anon2RoundTableShort</defName>
+		<label>round table (short)</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/TableStuff/RoundedTableShort</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<rect>(0.05,0.27,1.9,1.73)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>1400</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<Mass>8</Mass>
+		</statBases>
+		<size>(2,2)</size>
+		<costStuffCount>35</costStuffCount>
+		<rotatable>false</rotatable>
+	</ThingDef>
+  
+	<ThingDef ParentName="Anon2TableSimpleSurfaceBase">
+		<defName>Anon2CounterA</defName>
+		<label>Counter</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<description>An Counter, has a large flat top.</description>
+		
+		<graphicData>
+			<texPath>Things/Building/Furniture/TableStuff/Linked/Counter_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Custom6</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Furniture/TableStuff/Linked/Counter_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>Things/Building/Furniture/TableStuff/Linked/Counter_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>2</Beauty>
+			<Mass>20</Mass>
+		</statBases>    
+		<costList>
+			<WoodLog>4</WoodLog>
+		</costList>
+		<costStuffCount>8</costStuffCount>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<blockWind>false</blockWind>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<holdsRoof>false</holdsRoof>
+		<staticSunShadowHeight>0.8</staticSunShadowHeight>
+		<blockLight>false</blockLight>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>40</pathCost>
+		<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.65</fillPercent>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<building>
+			<isInert>true</isInert>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>1.5</multiplier>
+			</li>
+		</damageMultipliers>
+	</ThingDef>	
+	
+	<ThingDef ParentName="TableBase">
+		<defName>TableShortModular</defName>
+		<label>Modular Table</label>
+		<uiIconPath>Tables/table_menuicon</uiIconPath>	
+		<graphicData>
+			<texPath>Tables/tablelink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom1</li>
+			</linkFlags>
+		</graphicData>	
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>450</WorkToBuild>
+			<Mass>1</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>5</costStuffCount>
+		<rotatable>false</rotatable>
+		<placingDraggableDimensions>2</placingDraggableDimensions>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+	</ThingDef>	
+	
+<!--============================== Decor ==============================-->	
+	
+	<ThingDef ParentName="Anon2FurnitureBase">
+		<defName>ANON2SquarePlantPot</defName>
+		<label>plant vase</label>
+		<thingClass>Building_PlantGrower</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/FurnitureBasic/SquarePlantPot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.20</fillPercent>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>495</WorkToBuild>
+			<Mass>2</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<description>Plant decorative flowers here to improve the mood of people nearby.</description>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<fertility>1.0</fertility>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<building>
+			<defaultPlantToGrow>PlantDaylily</defaultPlantToGrow>
+			<sowTag>Decorative</sowTag>
+		</building>
+		<rotatable>false</rotatable>
+	</ThingDef>
+
+	<ThingDef ParentName="Anon2BuildingBase">
+		<defName>Anon2PlantSpot</defName>
+		<label>plant spot</label>
+		<thingClass>Building_PlantGrower</thingClass>
+		<category>Building</category>
+		
+		<graphicData>
+			<texPath>Things/Building/Furniture/FurnitureBasic/Linked/PlantSpot_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Custom5</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Furniture/FurnitureBasic/Linked/PlantSpot_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+			<uiIconPath>Things/Building/Furniture/FurnitureBasic/Linked/PlantSpot_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>110</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>    
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<description>A large flat pot for decorative flowers.</description>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>false</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<coversFloor>false</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<holdsRoof>false</holdsRoof>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+		<blockLight>false</blockLight>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<PathCost>10</PathCost>
+        <fertility>1.0</fertility>
+		<building>
+			<isInert>true</isInert>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+			<defaultPlantToGrow>PlantDaylily</defaultPlantToGrow>
+			<sowTag>Decorative</sowTag>
+		</building>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>1.25</multiplier>
+			</li>
+		</damageMultipliers>
+		<designationCategory>Furniture</designationCategory>
+	</ThingDef>
+	
+<!--============================== Functional ==============================-->	
+	
+	<ThingDef ParentName="Anon2FurnitureBase">
+		<defName>ANON2Dresser</defName>
+		<label>dresser</label>
+		<thingClass>Building_Storage</thingClass>
+		<description>A place for colonist to store personal belongings. When placed with a bed it will increase comfort and rest effectiveness slightly.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/BedroomStuff/Dresser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(2,1)</size>
+		<building>
+			<preventDeterioration>true</preventDeterioration>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Preferred</priority>
+				<filter>
+					<categories>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>900</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<Mass>30</Mass>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<BedRestEffectiveness>0.06</BedRestEffectiveness>
+					<Comfort>0.1</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<PathCost>80</PathCost>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<surfaceType>Item</surfaceType>
+	</ThingDef>
+
+	<ThingDef ParentName="Anon2FurnitureBase">
+		<defName>ANON2EndTable</defName>
+		<label>end table</label>
+		<thingClass>Building_Storage</thingClass>
+		<description>This small table goes well with a bed. When placed with a bed it will increase comfort and rest effectiveness slightly.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/BedroomStuff/EndTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.15,0.15,1.7,1.7)</rect>
+			</damageData>
+		</graphicData>
+		<size>(1,1)</size>
+		<building>
+			<preventDeterioration>true</preventDeterioration>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+			<priority>Preferred</priority>
+				<filter>
+					<categories>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<Mass>15</Mass>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<BedRestEffectiveness>0.02</BedRestEffectiveness>
+					<Comfort>0.05</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<PathCost>70</PathCost>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<surfaceType>Item</surfaceType>
+	</ThingDef>	
+	
+	<ThingDef ParentName="Anon2FurnitureBase">
+		<defName>ANON2EndTableLight</defName>
+		<label>end table light</label>
+		<thingClass>Building_Storage</thingClass>
+		<description>This small table goes well with a bed. When placed with a bed it will increase comfort and rest effectiveness slightly. Includes a lamp.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/BedroomStuff/EndTableLight</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.15,0.15,1.7,1.7)</rect>
+			</damageData>
+		</graphicData>
+		<size>(1,1)</size>
+		<building>
+			<preventDeterioration>true</preventDeterioration>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Preferred</priority>
+					<filter>
+						<categories>
+							<li>Apparel</li>
+						</categories>
+					</filter>
+			</defaultStorageSettings>
+		</building>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>12</Beauty>
+			<Mass>18</Mass>
+		</statBases>
+		<costList>
+			<Steel>10</Steel>
+			<LargeCircularGlass>1</LargeCircularGlass>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Facility">       
+				<statOffsets>			
+					<BedRestEffectiveness>0.02</BedRestEffectiveness>			
+					<Comfort>0.05</Comfort>
+				</statOffsets>        
+				<maxSimultaneous>1</maxSimultaneous>    
+			</li>     
+			<li Class="CompProperties_Power">        
+				<compClass>CompPowerTrader</compClass>        
+				<basePowerConsumption>50</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>    
+			</li>      
+			<li Class="CompProperties_Flickable"/>     
+				<li>      
+					<compClass>CompQuality</compClass>      
+				</li>     
+				<li Class="CompProperties_Glower">
+					<glowRadius>8</glowRadius>        
+					<glowColor>(217,217,208,0)</glowColor>     
+				</li>         
+        </comps>
+        <PathCost>70</PathCost>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
+		<surfaceType>Item</surfaceType>
+		<designationCategory>ANON2MF</designationCategory>
+	</ThingDef>	
+	
+	<ThingDef ParentName="Anon2NoCompQualityFurnitureBase">
+		<defName>ANON2FileCabinet</defName>
+		<label>file cabinet</label>
+		<description>A important place to store important documents about important experiments used for important research on important technologies. Increases research speed slightly when next to a research bench.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Misc/FileCabinet2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.15,0.15,1.7,1.7)</rect>
+			</damageData>
+		</graphicData>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<WorkToBuild>1200</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>2</Beauty>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<ResearchSpeedFactor>0.05</ResearchSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+  
+	<ThingDef ParentName="BookStorageBase">
+		<defName>AJO_BookRack</defName>
+		<label>book rack</label>
+		<description>A small bookshelf with a few books. Can be upgraded to a bookshelf. Boosts writing speed by 5% when placed near a writing table. Only one book rack can be linked to a single writing table.</description>
+		<graphicData>
+			<texPath>Cupro/Object/Furniture/BookRack/BookRack</texPath>
+		</graphicData>
+		<blockLight>false</blockLight>
+		<uiIconPath>Cupro/Object/Furniture/BookRack/BookRack_MenuIcon</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>20</pathCost>
+		<fillPercent>0.2</fillPercent>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<MarketValue>75</MarketValue>
+			<Beauty>10</Beauty>
+			<EntertainmentStrengthFactor>0.8</EntertainmentStrengthFactor>
+		</statBases>
+		<costList>
+			<WoodLog>30</WoodLog>
+			<AJO_PileOfBooks>1</AJO_PileOfBooks>
+		</costList>
+		<designationCategory>Joy</designationCategory>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.05</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+			<li Class="AdditionalJoyObjects.CompProperties_Upgradeable">
+				<UpgradeTex>Cupro/UI/Commands/Upgrade</UpgradeTex>
+				<BlueprintThingDef>AJO_Bookshelf</BlueprintThingDef>
+				<UpgradeDescString>Upgrade to bookshelf</UpgradeDescString>
+				<UpgradeLabelString>Upgrade</UpgradeLabelString>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BookStorageBase">
+		<defName>AJO_Bookshelf</defName>
+		<label>bookshelf</label>
+		<description>A bookshelf with a variety of books. Can be upgraded to a bookcase. Boosts writing speed by 10% when placed near a writing table. Only two bookshelves can be linked to a single writing table.</description>
+		<graphicData>
+			<texPath>Cupro/Object/Furniture/Bookshelf/Bookshelf</texPath>
+		</graphicData>
+		<blockLight>false</blockLight>
+		<uiIconPath>Cupro/Object/Furniture/Bookshelf/Bookshelf_MenuIcon</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>40</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<MarketValue>200</MarketValue>
+			<Beauty>25</Beauty>
+			<EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
+		</statBases>
+		<costList>
+			<WoodLog>30</WoodLog>
+			<AJO_PileOfBooks>2</AJO_PileOfBooks>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.1</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>2</maxSimultaneous>
+			</li>
+			<li Class="AdditionalJoyObjects.CompProperties_Upgradeable">
+				<UpgradeTex>Cupro/UI/Commands/Upgrade</UpgradeTex>
+				<BlueprintThingDef>AJO_Bookcase</BlueprintThingDef>
+				<UpgradeDescString>Upgrade to bookcase</UpgradeDescString>
+				<UpgradeLabelString>Upgrade</UpgradeLabelString>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BookStorageBase">
+		<defName>AJO_Bookcase</defName>
+		<label>bookcase</label>
+		<description>A bookcase with a wide variety of books. Boosts writing speed by 20% when placed near a writing table. Up to four bookcases can be linked to a single writing table.</description>
+		<graphicData>
+			<texPath>Cupro/Object/Furniture/Bookcase/Bookcase</texPath>
+		</graphicData>
+		<uiIconPath>Cupro/Object/Furniture/Bookcase/Bookcase_MenuIcon</uiIconPath>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<pathCost>70</pathCost>
+		<fillPercent>0.75</fillPercent>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<MarketValue>400</MarketValue>
+			<Beauty>50</Beauty>
+			<EntertainmentStrengthFactor>1.15</EntertainmentStrengthFactor>
+		</statBases>
+		<costList>
+			<WoodLog>40</WoodLog>
+			<AJO_PileOfBooks>2</AJO_PileOfBooks>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.2</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>4</maxSimultaneous>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>ArtName_Furniture</nameMaker>
+				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+				<minQualityForArtistic>Superior</minQualityForArtistic>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+	</ThingDef>
+
+	<ThingDef ParentName="FurnitureBase">
+		<defName>AJO_ReadingTable</defName>
+		<label>reading table</label>
+		<description>A small table made to be the perfect height for reading. Colonists can read at it when placed near a book rack, bookshelf, or bookcase.</description>
+		<graphicData>
+			<texPath>Cupro/Object/Furniture/ReadingTable/ReadingTable</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<uiIconPath>Cupro/Object/Furniture/ReadingTable/ReadingTable_back</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>10</Beauty>
+			<EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
+		</statBases>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>90</costStuffCount>
+		<pathCost>70</pathCost>
+		<passability>PassThroughOnly</passability>
+		<designationCategory>Joy</designationCategory>
+	</ThingDef>  
+  
+<!--============================== Joy ==============================--> 
+  
+	<ThingDef ParentName="JoyTableBase">
+		<defName>AJO_CardTable</defName>
+		<label>card table</label>
+		<description>A table specially made for playing a wide variety of card games. Suitable for 1-4 players </description>
+		<graphicData>
+			<texPath>Cupro/Object/Furniture/CardTable</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToBuild>10000</WorkToBuild>
+			<Beauty>15</Beauty>
+		</statBases>
+		<costList>
+			<WoodLog>100</WoodLog>
+			<Cloth>10</Cloth>
+		</costList>
+		<designationCategory>Joy</designationCategory>
+	</ThingDef>  
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>AJO_Thurible</defName>
+		<label>thurible</label>
+		<thingClass>AdditionalJoyObjects.Building_Thurible</thingClass>
+		<description>A thurible designed for burning special AEA Tanks. Releases a mood-altering vapor into the air which affects all nearby colonists.</description>
+		<graphicData>
+			<texPath>Cupro/Object/Utility/Thurible</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.3,0.3,0.4,0.4)</rect>
+			</damageData>
+		</graphicData>
+		<blockLight>false</blockLight>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<rotatable>false</rotatable>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.20</fillPercent>
+		<designationCategory>Joy</designationCategory>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>200.0</fuelConsumptionRate>
+				<autoRefuelPercent>0.0</autoRefuelPercent>
+				<fuelCapacity>1.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>AJO_AEAtank</li>
+					</thingDefs>
+				</fuelFilter>
+				<destroyOnNoFuel>false</destroyOnNoFuel>
+			</li> 
+		</comps>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>AdditionalJoyObjects.PlaceWorker_Thurible</li>
+		</placeWorkers>
+	</ThingDef>  
+  
+ 	<ThingDef ParentName="OnWallBase">
+		<defName>AJO_Dartboard</defName>
+		<label>dartboard</label>
+		<description>A game about accuracy often played at pubs and bars. Players throw darts from a distance and attempt to get them to hit certain areas on the board. It's relaxing, and even trains hand-eye coordination.</description>
+		<graphicData>
+			<texPath>Cupro/Object/Furniture/Dartboard/Dartboard</texPath>
+		</graphicData>
+		<uiIconPath>Cupro/Object/Furniture/Dartboard/Dartboard_MenuIcon</uiIconPath>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<WorkToBuild>250</WorkToBuild>
+			<Beauty>2</Beauty>
+			<Flammability>1.0</Flammability>
+			<EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
+		</statBases>
+		<costList>
+			<WoodLog>15</WoodLog>
+			<Steel>5</Steel>
+			<Cloth>5</Cloth>
+		</costList>
+		<building>
+			<watchBuildingStandDistanceRange>
+				<min>5</min>
+				<max>5</max>
+			</watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>3</watchBuildingStandRectWidth>
+		</building>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+		</placeWorkers> 
+		<designationCategory>Joy</designationCategory>
+	</ThingDef> 
+  
+  	<ThingDef ParentName="BuildingBase">
+		<defName>GlassMonitorLarge</defName>
+		<Label>Glassworks TV</Label>
+		<Description>A higher-tech glass television with crystal-clear image and richer color. More entertaining than a grainy tube TV.</Description>
+		<graphicData>
+			<texPath>Things/Building/Other/GlassworkTV</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<rotatable>true</rotatable>
+		
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.25</fillPercent>
+		<statBases>
+			<WorkToBuild>9000</WorkToBuild>
+			<MaxHitPoints>10</MaxHitPoints>
+			<MarketValue>1400</MarketValue>
+			<Flammability>1.0</Flammability>
+			<EntertainmentStrengthFactor>1.3</EntertainmentStrengthFactor>
+			<Beauty>11</Beauty>
+		</statBases>
+		<costList>
+			<Steel>80</Steel>
+			<Component>19</Component>
+			<Glass>4</Glass>
+		</costList>
+		<Size>(2,1)</Size>
+		<building>
+			<spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+			<boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+			<watchBuildingStandDistanceRange>
+				<min>2</min>
+				<max>6</max>
+			</watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>6</watchBuildingStandRectWidth>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+		</placeWorkers>
+		<DesignationCategory>Joy</DesignationCategory>
+		<pathCost>70</pathCost>
+		<Passability>PassThroughOnly</Passability>
+		<comps>
+			<li Class="CompProperties_Power" >
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>50</basePowerConsumption>
+				<!--<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>-->
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<tradeTags>
+			<li>Television</li>
+		</tradeTags>
+		<researchPrerequisites>
+			<li>DecorativeGlassResearch</li>
+			<li>TubeTelevision</li>
+			<li>ComponentAssembly</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+	</ThingDef>
+  
+<!--============================== Lights ==============================-->
+
+	<ThingDef ParentName="StandingLampBase" >
+		<defName>StandingLamp</defName>
+		<label>standing lamp</label>
+		<description>Standing lamp that lights an area.</description>
+		<designationHotKey>Misc11</designationHotKey>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(217,217,208,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="StandingLampBase">
+		<defName>StandingLamp_Red</defName>
+		<label>standing lamp (red)</label>
+		<description>Standing lamp that lights an area in red.</description>
+		<comps>
+		<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(217,0,0,0)</glowColor>
+		</li>
+		</comps>
+		<researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="StandingLampBase">
+		<defName>StandingLamp_Green</defName>
+		<label>standing lamp (green)</label>
+		<description>Standing lamp that lights an area in green.</description>
+		<comps>   
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(0,217,0,0)</glowColor>
+			</li>
+		</comps>
+		<researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="StandingLampBase">
+		<defName>StandingLamp_Blue</defName>
+		<label>standing lamp (blue)</label>
+		<description>Standing lamp that lights an area in blue.</description>
+		<comps>
+		<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(0,0,217,0)</glowColor>
+			</li>
+		</comps>
+		<researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="ANON2StandingLampBase">
+		<defName>StandingLamp_Magenta</defName>
+		<label>standing lamp (magenta)</label>
+		<description>Standing lamp that lights an area in magenta.</description>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(217,0,217,0)</glowColor>
+			</li>
+		</comps>
+		<researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="ANON2StandingLampBase">
+		<defName>StandingLamp_Yellow</defName>
+		<label>standing lamp (yellow)</label>
+		<description>Standing lamp that lights an area in yellow.</description>
+		<comps>   
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(217,217,0,0)</glowColor>
+			</li>
+		</comps>
+		<researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="ANON2StandingLampBase">
+		<defName>StandingLamp_Orange</defName>
+		<label>standing lamp (orange)</label>
+		<description>Standing lamp that lights an area in orange.</description>
+		<comps>   
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(217,117,0,0)</glowColor>
+			</li>
+		</comps>
+		<researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="ANON2StandingLampBase">
+		<defName>StandingLamp_Purple</defName>
+		<label>standing lamp (purple)</label>
+		<description>Standing lamp that lights an area in purple.</description>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(117,0,217,17)</glowColor>
+			</li>
+		</comps>
+		<researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="ANON2StandingLampBase">
+		<defName>StandingLamp_Aqua</defName>
+		<label>standing lamp (aqua)</label>
+		<description>Standing lamp that lights an area in aqua.</description>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(40,217,217,0)</glowColor>
+			</li>
+		</comps>
+		<researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="ANON2StandingLampBase">
+		<defName>StandingLamp_Lime</defName>
+		<label>standing lamp (lime)</label>
+		<description>Standing lamp that lights an area in lime.</description>
+		<comps>   
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(137,237,0,0)</glowColor>
+			</li>
+		</comps>
+		<researchPrerequisites><li>ColoredLights</li></researchPrerequisites>
+	</ThingDef>  
+  
+	<ThingDef ParentName="StandingLampBase">
+		<defName>AlertLamp</defName>
+		<label>alert lamp</label>
+		<thingClass>ConditionRed.AlertLamp</thingClass>
+		<description>A smart lamp whose color will change to indicate the colony's current threat level. Requires a powered threat sensor in order to function correctly. Lamps glow faint green when nothing dangerous is nearby, yellow if your colonists are not outnumbered, and red if they are.</description>
+		<costList>
+			<Steel>15</Steel>
+			<Component>1</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<compClass>CompGlower</compClass>
+				<glowRadius>8</glowRadius>
+				<glowColor>(0,50,100,0)</glowColor>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ColoredLights</li>
+		</researchPrerequisites>
+		<tickerType>Normal</tickerType>
+	</ThingDef> 
+  
+	<ThingDef ParentName="StandingLampBase">
+		<defName>OutdoorGroundLamp</defName>
+		<label>outdoor lamp</label>
+		<description>A weather proof lamp only placeable outdoors.</description>
+	<!--<altitudeLayer>Item</altitudeLayer>-->
+		<graphicData>
+			<texPath>Things/Building/Lights/OutdoorGroundLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>15</glowRadius>
+				<glowColor>(217,217,208,0)</glowColor>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>GlassworksResearch</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>Outdoorlight</defName>
+		<label>outdoor light</label>
+		<description>A light source which is weather proof.</description>
+		
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/OutdoorTorch</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<constructEffect>ConstructDirt</constructEffect>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<WorkToBuild>250</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<size>(1,1)</size>
+		<costList>
+  		    <Steel>35</Steel>
+			<LargeCircularGlass>1</LargeCircularGlass>
+		</costList>
+		<soundImpactDefault>BulletImpactGround</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>90</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>15</glowRadius>
+				<glowColor>(217,217,208,0)</glowColor>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
+	<!--<designationCategory>ANON2MF</designationCategory>-->
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>TorchLamp</defName>
+		<label>torch lamp</label>
+		<description>A wooden torch for lighting an area. Can be automatically refueled with coal, bamboo, or wood. Produces a small amount of heat.</description>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Misc/TorchLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+		</graphicData>
+		
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>8</pathCost>
+		<constructEffect>ConstructWood</constructEffect>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<costList>
+			<WoodLog>20</WoodLog>
+		</costList>
+		<soundImpactDefault>BulletImpactGround</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>2.2</fuelConsumptionRate>
+				<fuelCapacity>20.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+					<thingDefs>
+						<li>Coal</li>
+						<li>Bamboo</li>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<destroyOnNoFuel>true</destroyOnNoFuel>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>3.5</heatPerSecond>
+				<heatPushMaxTemperature>23</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>0.4</fireSize>
+				<offset>(0,0,0.2)</offset>
+			</li>
+		</comps>
+		<designationHotKey>Misc10</designationHotKey>
+		<designationCategory>ANON2MF</designationCategory>
+	</ThingDef>	
+	
+	<ThingDef ParentName="WallTorchBase">	
+		<defName>WallTorch</defName>
+		<label>wall torch</label>
+		<Description>A wall mounted torch for lighting an area. Can be automatically refueled with coal, bamboo, or wood. Not a good source of heat. Must be placed on a wall.</Description>
+		<graphicData>
+			<texPath>Things/Torch/WallTorch</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.1,1.1)</drawSize>
+			<drawRotated>true</drawRotated>
+			<allowFlip>true</allowFlip>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<WorkToBuild>80</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<Size>(1,1)</Size>
+		<costList>
+			<Steel>5</Steel>
+			<WoodLog>10</WoodLog>
+		</costList><placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>1.0</fuelConsumptionRate>
+				<fuelConsumptionPerTickInRain>0.045</fuelConsumptionPerTickInRain>
+				<fuelCapacity>10.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Coal</li>
+						<li>Bamboo</li>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<destroyOnNoFuel>true</destroyOnNoFuel>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>1</heatPerSecond>
+				<heatPushMaxTemperature>20</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>0.6</fireSize>
+				<offset>(0,0,0)</offset>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="CeilingLampBase" >
+		<defName>CeilingLamp</defName>
+		<label>ceiling lamp</label>
+		<description>Ceiling lamp that lights an area.</description>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>13</glowRadius>
+				<glowColor>(217,217,208,0)</glowColor>
+			</li>
+		</comps>
+		<researchPrerequisites><li>GlassworksResearch</li></researchPrerequisites>
+	</ThingDef>
+  
+	<ThingDef ParentName="CeilingLampBase">
+		<defName>CeilingLamp_Red</defName>
+		<label>ceiling lamp (red)</label>
+		<description>Ceiling lamp that lights an area in a dull red color.</description>
+		<graphicData>
+			<texPath>Things/Building/Lights/CeilingLamp_Red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>13</glowRadius>
+				<glowColor>(217,0,0,0)</glowColor>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ColoredLights</li>
+			<li>GlassworksResearch</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="CeilingLampBase">
+		<defName>CeilingLamp_Blue</defName>
+		<label>ceiling lamp (blue)</label>
+		<description>Ceiling lamp that lights an area in a dull blue color. Also has a calming affect.</description>
+		<graphicData>
+			<texPath>Things/Building/Lights/CeilingLamp_Blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>13</glowRadius>
+				<glowColor>(0,0,217,0)</glowColor>
+			</li>
+		</comps>
+		<statBases>
+			<Comfort>0.75</Comfort>
+		</statBases>
+		<researchPrerequisites>
+			<li>ColoredLights</li>
+			<li>GlassworksResearch</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="CeilingLampBase">
+		<defName>CeilingLamp_Green</defName>
+		<label>ceiling lamp (green)</label>
+		<description>Ceiling lamp that lights an area in a dull green color.</description>
+		<graphicData>
+			<texPath>Things/Building/Lights/CeilingLamp_Green</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>13</glowRadius>
+				<glowColor>(0,217,0,0)</glowColor>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ColoredLights</li>
+			<li>GlassworksResearch</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="CeilingLampBase">
+		<defName>CeilingLamp_Violet</defName>
+		<label>ceiling lamp (violet)</label>
+		<description>Ceiling lamp that lights an area in a violet color.</description>
+		<graphicData>
+			<texPath>Things/Building/Lights/CeilingLamp_Violet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>13</glowRadius>
+				<glowColor>(217,0,217,0)</glowColor>
+			</li>
+		</comps>
+		<statBases>
+			<Beauty>25</Beauty>
+			<Comfort>0.15</Comfort>
+		</statBases>
+		<researchPrerequisites>
+			<li>ColoredLights</li>
+			<li>GlassworksResearch</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="CeilingLampBase">
+		<defName>CeilingLamp_Yellow</defName>
+		<label>ceiling lamp (yellow)</label>
+		<description>Ceiling lamp that lights an area in a dull yellow color.</description>
+		<graphicData>
+			<texPath>Things/Building/Lights/CeilingLamp_Yellow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>13</glowRadius>
+				<glowColor>(217,217,0,0)</glowColor>
+			</li>
+		</comps>
+		<statBases>
+			<Comfort>0.75</Comfort>
+		</statBases>
+		<researchPrerequisites>
+			<li>ColoredLights</li>
+			<li>GlassworksResearch</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="CeilingLampBase">
+		<defName>CeilingLamp_Orange</defName>
+		<label>ceiling lamp (orange)</label>
+		<description>Ceiling lamp that lights an area in a dull Orange color.</description>
+		<graphicData>
+			<texPath>Things/Building/Lights/CeilingLamp_Orange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>13</glowRadius>
+				<glowColor>(217,150,0,0)</glowColor>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ColoredLights</li>
+			<li>GlassworksResearch</li>
+		</researchPrerequisites>
+	</ThingDef>
+  
+	<ThingDef ParentName="StandingLampBase">
+		<defName>WallLamp</defName>
+		<label>wall lamp</label>
+		<description>A lamp only placeable on a wall. Produces more light than average.</description>
+		<graphicData>
+			<texPath>Things/Building/Lights/WallLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<comps>
+		<!--<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>70</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>
+			</li>-->
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>15</glowRadius>
+				<glowColor>(217,217,208,0)</glowColor>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>GlassworksResearch</li>
+		</researchPrerequisites>
+		<designationCategory>ANON2MF</designationCategory>
+	<!--<placeWorkers>
+			<li>CommunityCoreLibrary.PlaceWorker_WallAttachment</li>
+		</placeWorkers>-->
+	</ThingDef>
+
+<!--============================== Sun Lamps ==============================-->	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>SunLamp</defName>
+		<label>sun lamp</label>
+		<thingClass>Building_SunLamp</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/SunLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.4, 0.2)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>false</blockWind>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>330</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<description>Lights an area brightly enough to grow crops.</description>
+		<costList>
+			<Steel>40</Steel>
+			<LargeCircularGlass>1</LargeCircularGlass>
+		</costList>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<overlightRadius>7.0</overlightRadius>
+				<glowRadius>16</glowRadius>
+				<glowColor>(370,370,370,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>1100</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<specialDisplayRadius>5.8</specialDisplayRadius>
+		<rotatable>false</rotatable>
+		<designationHotKey>Misc1</designationHotKey>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
+		<designationCategory>ANON2MF</designationCategory>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>SmallSunLamp</defName>
+		<label>small sun lamp</label>
+		<thingClass>Building_SunLamp</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/LampSunSmall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.4, 0.2)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>false</blockWind>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>330</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<description>Lights an area brightly enough to grow crops.</description>
+		<costList>
+			<Steel>25</Steel>
+			<LargeCircularGlass>1</LargeCircularGlass>
+		</costList>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<overlightRadius>5</overlightRadius>
+				<glowRadius>7.5</glowRadius>
+				<glowColor>(370,370,370,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>850</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<specialDisplayRadius>3.8</specialDisplayRadius>
+		<rotatable>false</rotatable>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
+		<designationCategory>ANON2MF</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>MiniSunLamp</defName>
+		<label>mini sun lamp</label>
+		<thingClass>Building_SunLamp</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/LampSunMini</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.4, 0.2)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>false</blockWind>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>330</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<description>Lights an area brightly enough to grow crops.</description>
+		<costList>
+			<Steel>15</Steel>
+			<LargeCircularGlass>1</LargeCircularGlass>
+		</costList>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<overlightRadius>3.5</overlightRadius>
+				<glowRadius>6</glowRadius>
+				<glowColor>(370,370,370,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>450</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<specialDisplayRadius>2.8</specialDisplayRadius>
+		<rotatable>false</rotatable>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
+		<designationCategory>ANON2MF</designationCategory>
+  </ThingDef>	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>HeatedSunLamp</defName>
+		<label>heated sun lamp</label>
+        <thingClass>VGDrinks.Building_SunLampHeatController</thingClass>
+		<tickerType>Rare</tickerType>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/HeatedSunLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.4, 0.2)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>330</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<description>Lights an area brightly enough to grow crops. Also is a small heater that will keep your room warm.</description>
+		<costList>
+			<Steel>130</Steel>
+			<Component>1</Component>
+			<LargeCircularGlass>1</LargeCircularGlass>
+		</costList>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<overlightRadius>7.0</overlightRadius>
+				<glowRadius>14</glowRadius>
+				<glowColor>(370,370,370,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>1300</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_TempControl">
+				<energyPerSecond>21</energyPerSecond>
+			</li>
+		</comps>
+		<specialDisplayRadius>5.8</specialDisplayRadius>
+		<rotatable>false</rotatable>
+		<researchPrerequisites>
+			<li>HeatedSunlamps</li>
+		</researchPrerequisites>
+		<designationCategory>ANON2MF</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>HeatedSmallSunLamp</defName>
+		<label>small heated sun lamp</label>
+        <thingClass>VGDrinks.Building_SunLampHeatController</thingClass>
+		<tickerType>Rare</tickerType>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/HeatedSunSmall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<shadowData>
+				<volume>(0.2, 0.4, 0.2)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>220</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<description>Lights an area brightly enough to grow crops.</description>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>120</Steel>
+ 		    <Component>1</Component>
+			<LargeCircularGlass>1</LargeCircularGlass>
+		</costList>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<overlightRadius>7.0</overlightRadius>
+				<glowRadius>5.5</glowRadius>
+				<glowColor>(370,370,370,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>1050</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_TempControl">
+				<energyPerSecond>21</energyPerSecond>
+			</li>
+		</comps>
+		<specialDisplayRadius>4.2</specialDisplayRadius>
+		<rotatable>false</rotatable>
+		<researchPrerequisites>
+			<li>HeatedSunlamps</li>
+		</researchPrerequisites>
+		<designationCategory>ANON2MF</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>HeatedMiniSunLamp</defName>
+		<label>mini heated sun lamp</label>
+        <thingClass>VGDrinks.Building_SunLampHeatController</thingClass>
+		<tickerType>Rare</tickerType>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/HeatedSunMini</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<shadowData>
+				<volume>(0.2, 0.4, 0.2)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>25</MaxHitPoints>
+			<WorkToBuild>150</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<description>Lights an area brightly enough to grow crops.</description>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>100</Steel>
+		    <Component>1</Component>
+			<LargeCircularGlass>1</LargeCircularGlass>
+		</costList>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<overlightRadius>7.0</overlightRadius>
+				<glowRadius>4.5</glowRadius>
+				<glowColor>(370,370,370,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>725</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_TempControl">
+				<energyPerSecond>21</energyPerSecond>
+			</li>
+		</comps>
+		<specialDisplayRadius>3.2</specialDisplayRadius>
+		<rotatable>false</rotatable>
+		<researchPrerequisites>
+			<li>HeatedSunlamps</li>
+		</researchPrerequisites>
+		<designationCategory>ANON2MF</designationCategory>
+	</ThingDef>		
+	
+</Buildings>

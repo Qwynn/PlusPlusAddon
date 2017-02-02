@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!--============================== Recipes ==============================-->
+
+	<RecipeDef Name="SurgeryOld" ParentName="SurgeryFlesh" Abstract="True">
+        <effectWorking>Surgery</effectWorking>
+        <soundWorking>Recipe_Surgery</soundWorking>
+        <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+        <workSkill>Medicine</workSkill>
+        <workSkillLearnFactor>18</workSkillLearnFactor>
+        <recipeUsers> 
+	<!--<li>Human</li>-->
+        </recipeUsers>
+    </RecipeDef>
+	
+	<RecipeDef  Name="ProcessRaw" Abstract="True">
+		<jobString>Processing plants.</jobString>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<workAmount>800</workAmount>
+		<recipeUsers>
+	<!--<li>PlantProcessingTable</li>-->
+		</recipeUsers>
+	</RecipeDef>	
+
+<!--============================== Floors ==============================-->		
+	
+	<TerrainDef Name="Anon2FloorBase" Abstract="True">
+		<layerable>true</layerable>
+		<affordances>
+			<li>Light</li>
+			<li>Heavy</li>
+			<li>SmoothHard</li>
+		</affordances>
+		<statBases>
+			<WorkToBuild>135</WorkToBuild>
+		</statBases>
+		<designationCategory>Floors</designationCategory>
+		<Fertility>0</Fertility>
+		<constructEffect>ConstructDirt</constructEffect>
+		<AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	</TerrainDef>	
+	
+<!--============================== Furniture ==============================-->	
+	
+    <ThingDef Name="Anon2FurnitureBase" ParentName="Anon2BuildingBase" Abstract="True">
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<DesignationCategory>Furniture</DesignationCategory>
+	</ThingDef>
+	
+    <ThingDef Name="Anon2NoCompQualityFurnitureBase" ParentName="Anon2BuildingBase" Abstract="True">
+		<tradeTags>
+			<li>Furniture</li>
+		</tradeTags>
+		<DesignationCategory>Furniture</DesignationCategory>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+	</ThingDef>	
+	
+	<ThingDef Name="Anon2ArtableFurnitureBase" ParentName="Anon2FurnitureBase" Abstract="True">
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>ArtName_Furniture</nameMaker>
+				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<DesignationCategory>Furniture</DesignationCategory>
+	</ThingDef>
+	
+    <ThingDef Name="Anon2TableBase" ParentName="Anon2FurnitureBase" Abstract="True">
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<description>People eat off tables when chairs are placed facing them.</description>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>60</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<surfaceType>Eat</surfaceType>
+		<comps>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<DesignationCategory>Furniture</DesignationCategory>
+	</ThingDef>
+	
+	<ThingDef Name="Anon2TableSimpleSurfaceBase" ParentName="Anon2BuildingBase" Abstract="True">
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<description>People eat off tables when chairs are placed facing them.</description>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>65</pathCost>
+		<fillPercent>0.9</fillPercent>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<surfaceType>Eat</surfaceType>
+		<comps>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
+		</comps>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<designationCategory>Furniture</designationCategory>
+	</ThingDef>
+
+	<ThingDef Name="BedBase" ParentName="FurnitureBase" Abstract="True">
+		<ThingClass>Building_Bed</ThingClass>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,4)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<WorkToBuild>870</WorkToBuild>
+			<Mass>50</Mass>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<Comfort>0.75</Comfort>
+			<ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+		</statBases>
+		<Size>(1,2)</Size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<building>
+			<Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+			<Bed_HealPerDay>7</Bed_HealPerDay>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ANON2Dresser</li>
+					<li>ANON2EndTable</li>
+					<li>ANON2EndTableLight</li>				
+					<li>sd_medicaddons_medieval_surg_washpan</li>  
+					<li>sd_medicaddons_medieval_surg_instruments</li>
+					<li>sd_medicaddons_medieval_surg_lamp</li>
+					<li>sd_medicaddons_industrial_surg_instruments</li>
+					<li>sd_medicaddons_industrial_surg_lamp</li>
+					<li>VitalsMonitor</li>
+					<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+					<li>sd_medicaddons_spacer_surg_instruments</li>
+					<li>sd_medicaddons_spacer_surg_lamp</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<fillPercent>0.4</fillPercent>
+		<PathCost>60</PathCost>
+		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+		<CastEdgeShadows>True</CastEdgeShadows>
+		<Passability>PassThroughOnly</Passability>
+		<DrawGUIOverlay>True</DrawGUIOverlay>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<costList>
+			<Cloth>12</Cloth>
+		</costList>
+	</ThingDef>
+  
+	<ThingDef Name="DoubleBedBase" ParentName="ArtableFurnitureBase" Abstract="True">
+		<ThingClass>Building_Bed</ThingClass>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<rect>(0,0.05,2,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>1740</WorkToBuild>
+			<Mass>85</Mass>
+			<Comfort>0.75</Comfort>
+			<Beauty>8</Beauty>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+		</statBases>
+		<Size>(2,2)</Size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+		<building>
+			<Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+			<Bed_HealPerDay>7</Bed_HealPerDay>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ANON2Dresser</li>
+					<li>ANON2EndTable</li>
+					<li>ANON2EndTableLight</li>				
+					<li>sd_medicaddons_medieval_surg_washpan</li>  
+					<li>sd_medicaddons_medieval_surg_instruments</li>
+					<li>sd_medicaddons_medieval_surg_lamp</li>
+					<li>sd_medicaddons_industrial_surg_instruments</li>
+					<li>sd_medicaddons_industrial_surg_lamp</li>
+					<li>VitalsMonitor</li>
+					<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+					<li>sd_medicaddons_spacer_surg_instruments</li>
+					<li>sd_medicaddons_spacer_surg_lamp</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<fillPercent>0.4</fillPercent>
+		<PathCost>60</PathCost>
+		<LeaveResourcesWhenKilled>True</LeaveResourcesWhenKilled>
+		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+		<CastEdgeShadows>True</CastEdgeShadows>
+		<Passability>PassThroughOnly</Passability>
+		<DrawGUIOverlay>True</DrawGUIOverlay>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<costList>
+			<Cloth>18</Cloth>
+		</costList>
+	</ThingDef>
+  
+	<ThingDef Name="RoyalBedBase" ParentName="ArtableFurnitureBase" Abstract="True">
+		<ThingClass>Building_Bed</ThingClass>
+		<graphicData>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>(4,4)</drawSize>
+		<damageData>
+			<rect>(0,0.05,2,1.95)</rect>
+		</damageData>
+		</graphicData>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>4500</WorkToBuild>
+			<Mass>90</Mass>
+			<Beauty>50</Beauty>
+			<BedRestEffectiveness>1.05</BedRestEffectiveness>
+			<Comfort>0.90</Comfort>
+			<ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+		</statBases>
+		<Size>(2,2)</Size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>110</costStuffCount>
+		<building>
+			<Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+			<Bed_HealPerDay>8</Bed_HealPerDay>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ANON2Dresser</li>
+					<li>ANON2EndTable</li>
+					<li>ANON2EndTableLight</li>				
+					<li>sd_medicaddons_medieval_surg_washpan</li>  
+					<li>sd_medicaddons_medieval_surg_instruments</li>
+					<li>sd_medicaddons_medieval_surg_lamp</li>
+					<li>sd_medicaddons_industrial_surg_instruments</li>
+					<li>sd_medicaddons_industrial_surg_lamp</li>
+					<li>VitalsMonitor</li>
+					<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+					<li>sd_medicaddons_spacer_surg_instruments</li>
+					<li>sd_medicaddons_spacer_surg_lamp</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<fillPercent>0.4</fillPercent>
+		<PathCost>60</PathCost>
+		<LeaveResourcesWhenKilled>True</LeaveResourcesWhenKilled>
+		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+		<CastEdgeShadows>True</CastEdgeShadows>
+		<Passability>PassThroughOnly</Passability>
+		<DrawGUIOverlay>True</DrawGUIOverlay>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<costList>
+			<Gold>50</Gold>
+			<Cloth>24</Cloth>
+		</costList>
+	</ThingDef>
+
+<!--============================== Lights ==============================-->	
+	
+	<ThingDef Name="StandingLampBase" ParentName="LampBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Building/Furniture/LampStanding</texPath>
+		</graphicData>
+		<costList>
+			<Steel>15</Steel>
+			<LargeCircularGlass>1</LargeCircularGlass>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>75</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+			</li>
+		</comps>
+		<designationCategory>ANON2MF</designationCategory>
+	</ThingDef>	
+	
+    <ThingDef Name="ANON2StandingLampBase" ParentName="LampBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Building/Furniture/LampStanding</texPath>
+		</graphicData>
+		<costList>
+			<Steel>15</Steel>
+			<LargeCircularGlass>1</LargeCircularGlass>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>75</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+			</li>
+		</comps>
+		<designationCategory>ANON2MF</designationCategory>
+	</ThingDef>		
+	
+	<ThingDef Name="WallTorchBase"  ParentName="BuildingBase" Abstract="True">
+		<ThingClass>Building</ThingClass>
+		<AltitudeLayer>PawnUnused</AltitudeLayer>
+		<fillPercent>0.15</fillPercent>
+		<constructEffect>ConstructWood</constructEffect>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<Passability>PassThroughOnly</Passability>
+		<surfaceType>Item</surfaceType>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<designationCategory>ANON2MF</designationCategory>
+	</ThingDef>	
+	
+	<ThingDef Name="CeilingLampBase" ParentName="BuildingBase" Abstract="True">
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.20</fillPercent>
+		<costList>
+			<Steel>10</Steel>
+			<LargeCircularGlass>1</LargeCircularGlass>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Lights/CeilingLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Power" >
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>65</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<!--<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>-->
+			</li>
+		<!--<li Class="CommunityCoreLibrary.CompProperties_RestrictedPlacement">
+				<compClass>CommunityCoreLibrary.CompRestrictedPlacement</compClass>
+			</li>-->
+		</comps>
+			<statBases>
+				<MaxHitPoints>50</MaxHitPoints>
+				<WorkToBuild>170</WorkToBuild>
+				<Flammability>1.0</Flammability>
+				<Beauty>4</Beauty>
+			</statBases>
+		<tickerType>Rare</tickerType>
+	<!--<placeWorkers>
+			<li>CommunityCoreLibrary.PlaceWorker_OnlyUnderRoof</li>
+		</placeWorkers>-->
+		<filthLeaving>BrokenGlass</filthLeaving>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<designationCategory>ANON2MF</designationCategory>
+	</ThingDef>
+	
+</Defs>

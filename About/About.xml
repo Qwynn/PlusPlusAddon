@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Rimworld++ Addon</name>
+  <author>Qwynn</author>
+  <url></url>
+  <targetVersion>0.16.1393</targetVersion>
+  <description>
+
+Applies various fixes and tweaks to some of the mods in the Rimworld++ collection. 
+
+This is not a standalone mod, and you will encounter errors on load up if you enable this without the entire Rimworld++ collection.
+
+ </description>
+</ModMetaData>
+
+
+
