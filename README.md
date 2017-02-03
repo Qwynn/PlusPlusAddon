@@ -4,12 +4,12 @@
 Applies various fixes and tweaks to some of the mods in the **[Rimworld++ Collection](https://steamcommunity.com/workshop/filedetails/?id=826370603)**.
 
 ## Installation
-Drop the **Rimworld++** folder into the Rimworld mods folder.
+Drop the latest release into your `RimWorld/Mods` folder.
 
 There are some additional steps I recommend you take after installation.
-- Go to the **[T] MoreFloors** folder located at: "*Steam\steamapps\workshop\content\294100\725623521\Defs*" and delete the "*DesignationCategoryDefs*" folder.
-- Go to the **Rimworld++** folder located at "*Steam\steamapps\workshop\content\294100\843667657\Defs\TerrainDefs\MoreFloors*" and copy the five XML files inside.
-- Go back to the **[T] MoreFloors** folder located at "*Steam\steamapps\workshop\content\294100\725623521\Defs\TerrainDefs*" and overwrite the files there.
+- Go to the **[T] MoreFloors** folder located at `Steam\steamapps\workshop\content\294100\725623521\Defs` and delete the "*DesignationCategoryDefs*" folder.
+- Go to the **Rimworld++** folder located at `Steam\steamapps\workshop\content\294100\843667657\Defs\TerrainDefs\MoreFloors` and copy the five XML files inside.
+- Go back to the **[T] MoreFloors** folder located at `Steam\steamapps\workshop\content\294100\725623521\Defs\TerrainDefs` and overwrite the files there.
 
 ## Required Files
 - [Additional Joy Objects (No Tea Version)](https://ludeon.com/forums/index.php?topic=28563.0)
