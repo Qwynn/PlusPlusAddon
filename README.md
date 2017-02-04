@@ -63,7 +63,8 @@ There are some additional steps I recommend you take after installation.
 
 ####BaconBits' Barn Stall
 - Corrects the WorkToMake issue.
-- **BaconBits' Wall Torches**
+
+####BaconBits' Wall Torches
 - Moves all lighting to the lighting tab.
 - Now accepts coal as a fuel source.
 - Corrects the WorkToMake issue.
