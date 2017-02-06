@@ -201,6 +201,9 @@
 		<costList>
 			<Cloth>12</Cloth>
 		</costList>
+		<researchPrerequisites>
+			<li>PPConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
   
 	<ThingDef Name="DoubleBedBase" ParentName="ArtableFurnitureBase" Abstract="True">
@@ -267,6 +270,9 @@
 		<costList>
 			<Cloth>18</Cloth>
 		</costList>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
   
 	<ThingDef Name="RoyalBedBase" ParentName="ArtableFurnitureBase" Abstract="True">
@@ -334,6 +340,9 @@
 			<Gold>50</Gold>
 			<Cloth>24</Cloth>
 		</costList>
+		<researchPrerequisites>
+			<li>PPCompConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 <!--============================== Lights ==============================-->	

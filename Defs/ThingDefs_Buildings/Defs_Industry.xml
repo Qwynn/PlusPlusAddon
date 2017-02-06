@@ -8,7 +8,6 @@
 		<label>fueled stove</label>
 		<ThingClass>Building_WorkTable_HeatPush</ThingClass>
 		<Description>A simple fueled stove with an attached countertop for preparing meals.</Description>
-		
 		<graphicData>
 			<texPath>Things/Building/Production/TableStoveFueled</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -73,6 +72,9 @@
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			<heatPerTickWhileWorking>0.25</heatPerTickWhileWorking>
 		</building>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="BenchBase">
@@ -143,6 +145,9 @@
 			<isMealSource>true</isMealSource>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="BenchBase">
@@ -150,7 +155,6 @@
 		<label>fueled food prep table</label>
 		<ThingClass>Building_WorkTable_HeatPush</ThingClass>
 		<Description>An unpowered version of the canning stove, food press, and prep table. Makes simple items. Requires 40% work to make items here.</Description>
-		
 		<graphicData>
 			<texPath>Things/Building/Canningstove</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -213,6 +217,9 @@
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 			</li>
 		</comps>
+		<researchPrerequisites>
+			<li>PPCompConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="BenchBase">
@@ -220,7 +227,6 @@
 		<label>fueled sweets table</label>
 		<ThingClass>Building_WorkTable</ThingClass>
 		<Description>Makes sweet treates.</Description>
-		
 		<graphicData>
 			<texPath>Things/Building/Candytable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -294,7 +300,6 @@
 		<label>fueled smithy</label>
 		<ThingClass>Building_WorkTable</ThingClass>
 		<Description>A fueled station equipped for smithing non-mechanical weapons and tools.</Description>
-		
 		<graphicData>
 			<texPath>Things/Building/Production/TableSmithingFueled</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -426,7 +431,7 @@
 		</researchPrerequisites>
 	</ThingDef>	
 	
-	<ThingDef ParentName="BenchBase">
+<!--<ThingDef ParentName="BenchBase">
 		<DefName>WeaponAssemblyTable_RT</DefName>
 		<label>Weapon Assembly Table</label>
 		<ThingClass>Building_WorkTable</ThingClass>
@@ -493,7 +498,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
-	</ThingDef>	
+	</ThingDef>-->	
 	
 	<ThingDef ParentName="BuildingBase">
 		<defName>GlassworkTable</defName>
@@ -744,6 +749,9 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
+		<researchPrerequisites>
+			<li>PPConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>	
 	
 	<ThingDef ParentName="FurnitureBase">
@@ -804,6 +812,9 @@
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>	
 	
 	<ThingDef ParentName="BuildingBase">
@@ -904,7 +915,7 @@
 		<researchPrerequisites><li>CarpetMaking</li></researchPrerequisites>
 	</ThingDef>	
 	
-    <!--<ThingDef ParentName="FSWorkTableBuildingBase">
+<!--<ThingDef ParentName="FSWorkTableBuildingBase">
 		<DefName>FSStylist</DefName>
 		<label>Face styling bench</label>
 		<ThingClass>FaceStyling.Facestyler</ThingClass>
@@ -944,7 +955,7 @@
 		<interactionCellOffset>(0,0,1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<minifiedDef>MinifiedFurniture</minifiedDef>
- </ThingDef>-->
+	</ThingDef>-->
 	
 <!--============================== Power ==============================-->
 
@@ -1020,7 +1031,7 @@
 	
 <!--============================== Temperature ==============================-->	
 	
-    <ThingDef ParentName="BuildingBase">
+<!--<ThingDef ParentName="BuildingBase">
         <defName>Heater</defName>
         <label>small heater</label>
         <thingClass>RedistHeat.Building_Heater</thingClass>
@@ -1070,7 +1081,7 @@
 			<li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_TempControl">
 				<compClass>CompTempControl</compClass>
-                <energyPerSecond>5.04</energyPerSecond> <!-- 21 -->
+                <energyPerSecond>5.04</energyPerSecond>
             </li>
             <li Class="CompProperties_Glower">
                 <compClass>CompGlower</compClass>
@@ -1138,7 +1149,7 @@
 			<li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_TempControl">
 				<compClass>CompTempControl</compClass>
-                <energyPerSecond>-5.04</energyPerSecond> <!-- -21 -->
+                <energyPerSecond>-5.04</energyPerSecond>
             </li>
 			<li Class="CompProperties_Breakdownable"/>
         </comps>
@@ -1296,7 +1307,6 @@
             <li Class="CompProperties_TempControl">
 				<compClass>CompTempControl</compClass>
                 <energyPerSecond>21.12</energyPerSecond>
-<!--88-->
             </li>
             <li Class="CompProperties_Glower">
                 <compClass>CompGlower</compClass>
@@ -1357,7 +1367,6 @@
             <li Class="CompProperties_TempControl">
 				<compClass>CompTempControl</compClass>
                 <energyPerSecond>-8.4</energyPerSecond>
-<!-- -35 -->
             </li>
 			<li Class="CompProperties_Breakdownable"/>
         </comps>
@@ -1431,7 +1440,7 @@
 		</researchPrerequisites>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
         <tickerType>Normal</tickerType>
-    </ThingDef>	
+    </ThingDef>-->	
 	
 <!--============================== Other ==============================-->
 

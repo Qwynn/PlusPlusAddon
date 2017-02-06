@@ -552,6 +552,9 @@
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
+		<researchPrerequisites>
+			<li>MicroelectronicsBasics</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -611,6 +614,9 @@
 		<Size>(1,8)</Size>
 		<designationCategory>Misc</designationCategory>
 		<Passability>PassThroughOnly</Passability>
+		<researchPrerequisites>
+			<li>PPCompConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>  
 	
 	<ThingDef ParentName="BuildingBase">
@@ -648,6 +654,9 @@
 			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<passability>PassThroughOnly</passability>
+		<researchPrerequisites>
+			<li>PPCompConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
   
 	<ThingDef ParentName="BuildingBase">
@@ -679,6 +688,9 @@
 		<Size>(1,8)</Size>
 		<designationCategory>Misc</designationCategory>
 		<Passability>PassThroughOnly</Passability>
+		<researchPrerequisites>
+			<li>PPCompConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
   
 	<ThingDef ParentName="BuildingBase">

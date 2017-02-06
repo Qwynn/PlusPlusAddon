@@ -305,6 +305,9 @@
 		<costList>
 			<Cloth>12</Cloth>
 		</costList>
+		<researchPrerequisites>
+			<li>PPConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="AnimalFeedTroughBase">	
@@ -352,6 +355,9 @@
 			<li>ITab_Storage</li>
 		</inspectorTabs>
 		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>PPConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="BarnStallBase">
@@ -385,6 +391,9 @@
 			<ImmunityGainSpeedFactor>1.5</ImmunityGainSpeedFactor>
 		</statBases>
 		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>PPConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
 	
 <!--============================== Chairs ==============================-->		
@@ -427,6 +436,9 @@
 		<building>
 			<isSittable>true</isSittable>
 		</building>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="Anon2FurnitureBase">
@@ -467,6 +479,9 @@
 		<building>
 			<isSittable>true</isSittable>
 		</building>
+		<researchPrerequisites>
+			<li>PPUpholstery</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="Anon2FurnitureBase">
@@ -507,6 +522,9 @@
 		<building>
 			<isSittable>true</isSittable>
 		</building>
+		<researchPrerequisites>
+			<li>PPUpholstery</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="Anon2FurnitureBase">
@@ -547,6 +565,9 @@
 		<building>
 			<isSittable>true</isSittable>
 		</building>
+		<researchPrerequisites>
+			<li>PPUpholstery</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="Anon2FurnitureBase">
@@ -588,6 +609,9 @@
 			<isSittable>true</isSittable>
 		</building>
 		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>PPUpholstery</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="Anon2FurnitureBase">
@@ -628,6 +652,9 @@
 		<building>
 			<isSittable>true</isSittable>
 		</building>
+		<researchPrerequisites>
+			<li>PPUpholstery</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="Anon2FurnitureBase">
@@ -668,6 +695,9 @@
 		<building>
 			<isSittable>true</isSittable>
 		</building>
+		<researchPrerequisites>
+			<li>PPUpholstery</li>
+		</researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="BuildingBase">
@@ -798,6 +828,9 @@
 		</statBases>
 		<size>(2,4)</size>
 		<costStuffCount>95</costStuffCount>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="Anon2TableBase">
@@ -826,6 +859,9 @@
 		<size>(2,2)</size>
 		<costStuffCount>35</costStuffCount>
 		<rotatable>false</rotatable>
+		<researchPrerequisites>
+			<li>PPConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
   
 	<ThingDef ParentName="Anon2TableSimpleSurfaceBase">
@@ -834,7 +870,6 @@
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<description>An Counter, has a large flat top.</description>
-		
 		<graphicData>
 			<texPath>Things/Building/Furniture/TableStuff/Linked/Counter_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -902,6 +937,9 @@
 				<multiplier>1.5</multiplier>
 			</li>
 		</damageMultipliers>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>	
 	
 	<ThingDef ParentName="TableBase">
@@ -934,7 +972,7 @@
 	
 	<ThingDef ParentName="Anon2FurnitureBase">
 		<defName>ANON2SquarePlantPot</defName>
-		<label>plant vase</label>
+		<label>angled planter</label>
 		<thingClass>Building_PlantGrower</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Furniture/FurnitureBasic/SquarePlantPot</texPath>
@@ -972,14 +1010,16 @@
 			<sowTag>Decorative</sowTag>
 		</building>
 		<rotatable>false</rotatable>
+		<researchPrerequisites>
+			<li>PPConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="Anon2BuildingBase">
 		<defName>Anon2PlantSpot</defName>
-		<label>plant spot</label>
+		<label>modular planter</label>
 		<thingClass>Building_PlantGrower</thingClass>
 		<category>Building</category>
-		
 		<graphicData>
 			<texPath>Things/Building/Furniture/FurnitureBasic/Linked/PlantSpot_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1048,6 +1088,9 @@
 			</li>
 		</damageMultipliers>
 		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>PPCompConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
 	
 <!--============================== Functional ==============================-->	
@@ -1092,7 +1135,6 @@
 		<passability>PassThroughOnly</passability>
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>0.4</fillPercent>
-		
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToBuild>900</WorkToBuild>
@@ -1123,6 +1165,9 @@
 			<li>ITab_Storage</li>
 		</inspectorTabs>
 		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="Anon2FurnitureBase">
@@ -1162,7 +1207,6 @@
 		<passability>PassThroughOnly</passability>
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>1</fillPercent>
-		
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToBuild>500</WorkToBuild>
@@ -1193,6 +1237,9 @@
 			<li>ITab_Storage</li>
 		</inspectorTabs>
 		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>	
 	
 	<ThingDef ParentName="Anon2FurnitureBase">
@@ -1328,6 +1375,9 @@
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
   
 	<ThingDef ParentName="BookStorageBase">
@@ -1368,6 +1418,9 @@
 				<UpgradeLabelString>Upgrade</UpgradeLabelString>
 			</li>
 		</comps>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="BookStorageBase">
@@ -1407,6 +1460,9 @@
 				<UpgradeLabelString>Upgrade</UpgradeLabelString>
 			</li>
 		</comps>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="BookStorageBase">
@@ -1450,6 +1506,9 @@
 		<inspectorTabs>
 			<li>ITab_Art</li>
 		</inspectorTabs>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="FurnitureBase">
@@ -1494,6 +1553,9 @@
 		<pathCost>70</pathCost>
 		<passability>PassThroughOnly</passability>
 		<designationCategory>Joy</designationCategory>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>  
   
 <!--============================== Joy ==============================--> 
@@ -1514,6 +1576,9 @@
 			<Cloth>10</Cloth>
 		</costList>
 		<designationCategory>Joy</designationCategory>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>  
   
 	<ThingDef ParentName="BuildingBase">
@@ -1568,6 +1633,9 @@
 		<placeWorkers>
 			<li>AdditionalJoyObjects.PlaceWorker_Thurible</li>
 		</placeWorkers>
+		<researchPrerequisites>
+			<li>PPCompConstruction</li>
+		</researchPrerequisites>
 	</ThingDef>  
   
  	<ThingDef ParentName="OnWallBase">
@@ -1608,6 +1676,9 @@
 			<li>PlaceWorker_WatchArea</li>
 		</placeWorkers> 
 		<designationCategory>Joy</designationCategory>
+		<researchPrerequisites>
+			<li>PPCompConstruction</li>
+		</researchPrerequisites>
 	</ThingDef> 
   
   	<ThingDef ParentName="BuildingBase">
@@ -1621,7 +1692,6 @@
 		</graphicData>
 		<AltitudeLayer>Building</AltitudeLayer>
 		<rotatable>true</rotatable>
-		
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<fillPercent>0.25</fillPercent>
 		<statBases>

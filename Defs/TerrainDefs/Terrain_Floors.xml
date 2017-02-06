@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TerrainDefs>
 
-	<TerrainDef ParentName="FAFloorBase">
+<!--<TerrainDef ParentName="FAFloorBase">
 		<DefName>FAFWoodTile</DefName>
 		<Label>Plywood panels</Label>
 		<RenderPrecedence>245</RenderPrecedence>
@@ -76,7 +76,7 @@
 		<researchPrerequisites>
 			<li>FutureFlooring</li>
 		</researchPrerequisites>
-	</TerrainDef>
+	</TerrainDef>-->
   
 	<TerrainDef ParentName="Anon2CarpetBase">
 		<DefName>CarpetBedGreen</DefName>
