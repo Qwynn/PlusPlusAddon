@@ -1,7 +1,7 @@
 [![RimWorld Alpha 16](https://img.shields.io/badge/RimWorld-Alpha 16-brightgreen.svg)](http://rimworldgame.com/)
 
 # Rimworld++ Addon
-Applies various fixes and tweaks to some of the mods in the **[Rimworld++ Collection](https://steamcommunity.com/workshop/filedetails/?id=826370603)**.
+Applies various fixes and tweaks to some of the mods in the **[Rimworld++ Collection](https://steamcommunity.com/workshop/filedetails/?id=826370603)** and adds four new research projects for a better tribal start.
 
 ## Installation
 Drop the latest release into your `RimWorld/Mods` folder.
