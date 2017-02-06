@@ -15,6 +15,7 @@ Drop the latest release into your `RimWorld/Mods` folder.
 - [BaconBits' Wall Torch](https://ludeon.com/forums/index.php?topic=25580.msg259997#msg259997)
 - [Black Fuel](https://ludeon.com/forums/index.php?topic=26492.0)
 - [EPOE Hardcore LITE](https://ludeon.com/forums/index.php?topic=28731.0)
+- [Extended Storage](https://github.com/Skullywag/ExtendedStorage/releases)
 - [Facial Stuff](https://github.com/Killface1980/RW_FacialStuff/releases)
 - [Fences & Floors](https://ludeon.com/forums/index.php?topic=26964.0)
 - [Fluffy Breakdowns](https://github.com/FluffierThanThou/FluffyBreakdowns/releases)
@@ -36,6 +37,7 @@ Drop the latest release into your `RimWorld/Mods` folder.
 - [RT's Weapon Pack](https://ludeon.com/forums/index.php?topic=25272.0)
 - [Practise Target](https://ludeon.com/forums/index.php?topic=10623.msg105052#msg105052)
 - [Seeds Please!](https://ludeon.com/forums/index.php?topic=24443.0)
+- [Temperature Gauge](https://github.com/Aeryl/TempGauge/releases)
 - [Ushanka!](https://ludeon.com/forums/index.php?topic=20077.0)
 - [Vegetable Garden](https://ludeon.com/forums/index.php?topic=12934.0)
 
