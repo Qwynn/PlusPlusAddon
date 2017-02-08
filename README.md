@@ -33,6 +33,7 @@ Drop the latest release into your `RimWorld/Mods` folder.
 - [More Vanilla Turrets](https://ludeon.com/forums/index.php?topic=9521.0)
 - [Redist Heat](https://github.com/Morgloz/RimWorld-RedistHeat/releases)
 - [Roof Support](https://github.com/MatchSG/A16RoofSupport)
+- [Refactored Work Priorities](https://github.com/DingoDjango/RefactoredWorkPriorities/releases)
 - [Repair Workbench](https://steamcommunity.com/workshop/filedetails/?id=733997423)
 - [RT's Weapon Pack](https://ludeon.com/forums/index.php?topic=25272.0)
 - [Practise Target](https://ludeon.com/forums/index.php?topic=10623.msg105052#msg105052)
