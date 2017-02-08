@@ -15,6 +15,7 @@
 
 ### Removed
 - Research requirements for short tables
+- More Floors files
 
 ### Changed
 - Moved modular tables to complex construction
