@@ -5,6 +5,13 @@
 ## [Unreleased]
 ### Added
 - New seed ratios for Seeds Please!
+- Fuled production facilities accept all extended woodworking woods
+- Fixed extended woodworking table building instantly
+- Fixed extended woodworking fences building instantly
+- Moved extended woodworking fences to the fences tab
+- Decreased alpha muffalo size
+- Elk are no longer dairy animals
+- Beefalo are now diary animals
 
 ### Removed
 - Research requirements for short tables
