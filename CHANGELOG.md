@@ -22,8 +22,6 @@
 - Targets are now stuffed for different woods
 - Meditrain tables are now stuffed for different woods
 - Passive coolers are now stuffed for different woods
--
-
 
 ### Removed
 
