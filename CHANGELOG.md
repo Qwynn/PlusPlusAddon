@@ -4,26 +4,23 @@
 
 ## [Unreleased]
 ### Added
-- Removed Vegetable Garden dandelions from planters
-- Vegetable Garden flowers can now be sown in grow zones
-- Added seeds for decorative flowers
-- Bookracks, bookshelves, and bookcases are now stuffed for different woods
-- Fishing piers are now stuffed for different woods
-- Milling stones are now stuffed for different woods
-- Looms are now stuffed for different woods
-- Plant processing benches are now stuffed for different woods
+- Elk are no longer dairy animals
+- Disabled CK Animal Packs pandas
+
+### Removed
 - Wool looms are now stuffed for different woods
 - Painting easels are now stuffed for different woods
 - Rug making tables are now stuffed for different woods
 - Dye barrels are now stuffed for different woods
-- face styling bench is now stuffed for different woods
-- Training dummy is now stuffed for different woods
+- Milling stones are now stuffed for different woods
+- Looms are now stuffed for different woods
+- Plant processing benches are now stuffed for different woods
 - Shooting ranges are now stuffed for different woods
-- Targets are now stuffed for different woods
+- Bookracks, bookshelves, and bookcases are now stuffed for different materials
+- Torches are now stuffed for different woods
+- Wall torches are now stuffed for different wood
+- Training dummy is now stuffed for different woods
 - Meditrain tables are now stuffed for different woods
-- Passive coolers are now stuffed for different woods
-
-### Removed
 
 ### Changed
 
@@ -32,10 +29,10 @@
 ### Added
 - Seed drop ratios have been adjusted
 - Seeds have been added for various Vegetable Garden plants which did not have them
-- Fueled production facilities accept all wood types from Extended Woodworking
-- Fueled torches accept all wood types from Extended Woodworking
-- Torches are now stuffed for different woods
-- Wall torches are now stuffed for different woods
+- Removed Vegetable Garden dandelions from planters
+- Vegetable Garden flowers can now be sown in grow zones
+- Fueled production facilities accept all wood types from Expanded Woodworking for Vegetable Garden
+- Fueled torches accept all wood types from Expanded Woodworking for Vegetable Garden
 - Beefalo are now diary animals
 - Quality has been added to barn stalls
 - Quality has been added to modular tables
