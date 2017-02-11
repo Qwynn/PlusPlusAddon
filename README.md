@@ -157,3 +157,5 @@ All current and past versions of this mod can be downloaded from [GitHub](https:
 
 ## Version Number
 0.16.0.2
+
+## [License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
