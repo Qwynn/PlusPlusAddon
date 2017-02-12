@@ -11,10 +11,10 @@ Drop the latest release into your `RimWorld/Mods` folder.
 - [Area Rugs](https://ludeon.com/forums/index.php?topic=18657.0)
 - [BaconBits' Animal Feed Trough for Vegetable Garden](https://ludeon.com/forums/index.php?topic=25580.msg259998#msg259998)
 - [BaconBits' Barn Stall](https://ludeon.com/forums/index.php?topic=25580.msg260001#msg260001)
-- [BaconBits' Cobblestone Floors](https://ludeon.com/forums/index.php?topic=25580.msg260005#msg260005)
 - [BaconBits' Wall Torch](https://ludeon.com/forums/index.php?topic=25580.msg259997#msg259997)
 - [Black Fuel](https://ludeon.com/forums/index.php?topic=26492.0)
 - [EPOE Hardcore LITE](https://ludeon.com/forums/index.php?topic=28731.0)
+- [Expanded Woodworking for Vegetable Garden](https://github.com/Qwynn/ExpandedWoodworkingVG/releases)
 - [Extended Storage](https://github.com/Skullywag/ExtendedStorage/releases)
 - [Facial Stuff](https://github.com/Killface1980/RW_FacialStuff/releases)
 - [Fences & Floors](https://ludeon.com/forums/index.php?topic=26964.0)
@@ -35,6 +35,7 @@ Drop the latest release into your `RimWorld/Mods` folder.
 - [Roof Support](https://github.com/MatchSG/A16RoofSupport)
 - [Refactored Work Priorities](https://github.com/DingoDjango/RefactoredWorkPriorities/releases)
 - [Repair Workbench](https://steamcommunity.com/workshop/filedetails/?id=733997423)
+- [RimStarve](https://github.com/apkd/RimStarve/releases)
 - [RT's Weapon Pack](https://ludeon.com/forums/index.php?topic=25272.0)
 - [Practise Target](https://ludeon.com/forums/index.php?topic=10623.msg105052#msg105052)
 - [Seeds Please!](https://ludeon.com/forums/index.php?topic=24443.0)
@@ -43,111 +44,123 @@ Drop the latest release into your `RimWorld/Mods` folder.
 - [Vegetable Garden](https://ludeon.com/forums/index.php?topic=12934.0)
 
 ## Features
-####[T] Misc Stuff
+#### [T] Misc Stuff
 - Moves the alert lamp to the lighting tab.
 
-####[T] More Beds (Cloth)
+#### [T] More Beds (Cloth)
 - Provides compatibility with [sd] Medic Addons and More Furniture.
+- Beds are now stuffed.
 
-####[T] More Floors
-- Moves all additional flooring to the flooring tab.
-- Additional Joy Objects
+#### [T] More Floors
+- Removes the wool loom.
+- Moves wool cloth recipes to the tailor's loom.
+- Raw wool must now be processed into wool cloth for crafting.
+
+#### Additional Joy Objects
+- Corrects the WorkToMake issue.
+- Many objects are now stuffed.
+
+#### Area Rugs
 - Corrects the WorkToMake issue.
 
-####Area Rugs
-- Corrects the WorkToMake issue.
-- BaconBits' Animal Feed Trough for Vegetable Garden	
+#### BaconBits' Animal Feed Trough for Vegetable Garden	
 - Corrects the WorkToMake issue.
 
-####BaconBits' Barn Stall
+#### BaconBits' Barn Stall
 - Corrects the WorkToMake issue.
+- Quality ratings added.
 
-####BaconBits' Wall Torches
+#### BaconBits' Wall Torches
 - Moves all lighting to the lighting tab.
-- Now accepts coal as a fuel source.
+- Now accepts coal and all wood as fuel sources.
 - Corrects the WorkToMake issue.
 
-####Black Fuel
+#### Black Fuel
 - All fueled lights accept coal.
 - All fueled buildings accept coal.
 - Removed coal campfire.
 
-####Core Rimworld
+#### Core Rimworld
 - Moves all lighting to the lighting tab.
 
-####EPOE Hardcore LITE
+#### EPOE Hardcore LITE
 - Removed cures for old wounds and scars.
 - Added bone repairs from DE Surgeries.
 
-####Facial Stuff
+#### Fences and Floors
 - Corrects the WorkToMake issue.
 
-####Fences and Floors
-- Corrects the WorkToMake issue.
-
-####Fluffy Breakdowns
+#### Fluffy Breakdowns
 - Makes maintenance use the repair work order from Refactored Work Priorities.
 
-####Glass + Lights
+#### Glass + Lights
 - Moves all lighting to the lighting tab.
 - All lights now require glass.
 - Corrects the WorkToMake issue.
 
-####Hospitality
+#### Hospitality
 - Guest beds are now affected by More Furniture's bedroom stuff.
 - Guest beds are now affected by [sd] Medic Addons.
 - Guest beds now require cloth to build.
 - Guest beds use bed textures from [T] More Beds.
+- Guest beds are now stuffed.
 
-####LT Gardening
+#### LT Gardening
 - Fixes the duplicate dandelion issue when used with Vegetable Garden.
 
-####Medical Training
+#### Medical Training
 - Moves the meditrain table to the misc tab.
+- Meditrain tables are now stuffed.
 
-####Modular Tables
+#### Modular Tables
 - Corrects the WorkToMake issue.
+- Quality added.
 
-####More Furniture
+#### More Furniture
 - Reintroduces the Lighting architect tab.
 - Moves all lighting to the new tab.
 - Moves all furniture to the furniture tab.
 - Corrects the WorkToMake issue.
 
-####More Vanilla Turrets
+#### More Vanilla Turrets
 - Removes Gun Complex as starting classic technology.
 - Corrects the WorkToMake issue.
 
-####Practise Target
+#### Practise Target
 - Moves all items to the misc tab.
+- Many objects are now stuffed.
 
-####RedistHeat
+#### Repair Workbench
 - Corrects the WorkToMake issue.
 
-####Repair Workbench
+#### Roof Support
 - Corrects the WorkToMake issue.
 
-####Roof Support
-- Corrects the WorkToMake issue.
+#### RimStarve
+- Beefalo are now dairy animals.
+- Volt goats have unique meat and leather.
 
-####RT's Weapon Pack
+#### RT's Weapon Pack
 - Modified the pickaxe to avoid overlap.
-- Corrects the WorkToMake issue.
 
-####Seeds Please!
+#### Seeds Please!
 - Removed cloth processing from the seed extraction bench.
+- Seed extraction bench is now stuffed.
+- Seed drop ratios have been adjusted.
+- Seeds added for Vegetable Garden plants which did not have them.
 
-####Ushanka!
+#### Ushanka!
 - Modifies the gasmask to avoid item overlap.
 
-####Vegetable Garden
+#### Vegetable Garden
 - Moves all lighting to the lighting tab.
 - Sunlamps no longer block wind turbines.
 - Sunlamps now require glass.
-- Fueled workbenches now accept coal as a fuel source.
+- Fueled workbenches now accept coal and all woods as fuel sources.
 - Removed apperal salvaging from the loom.
 - Removed outdoor light to avoid overlap.
 - Changes the name of the Garden Tools tab to Gardening.
+- Decorative flowers can now be grown in zones.
 
 ## Found a Bug?
 Make sure you have developer mode enabled in Rimworld before creating a bug report, then create a bug report [here](https://github.com/Qwynn/plusplusaddon/issues). Please provide your exported HugsLib log.
@@ -156,6 +169,6 @@ Make sure you have developer mode enabled in Rimworld before creating a bug repo
 All current and past versions of this mod can be downloaded from [GitHub](https://github.com/Qwynn/plusplusaddon/releases).
 
 ## Version Number
-0.16.0.2
+0.16.0.3
 
 ## [License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
