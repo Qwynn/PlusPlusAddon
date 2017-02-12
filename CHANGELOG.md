@@ -1,14 +1,29 @@
 # Change Log
 
-**Current:** [v0.16.0.2](https://github.com/Qwynn/PlusPlusAddon/releases/tag/v0.16.0.2)
+**Current:** [v0.16.0.3](https://github.com/Qwynn/PlusPlusAddon/releases/tag/v0.16.0.3)
 
 ## [Unreleased]
 ### Added
 - Elk are no longer dairy animals
-- Disabled CK Animal Packs pandas
 
 ### Removed
-- Wool looms are now stuffed for different woods
+
+
+### Changed
+
+
+## [0.16.0.3] - 2017-02-11
+### Added
+- Seed drop ratios have been adjusted
+- Seeds have been added for various Vegetable Garden plants which did not have them
+- Removed Vegetable Garden dandelions from planters
+- Vegetable Garden flowers can now be sown in grow zones
+- Removed the wool loom
+- Wool cloth recipes moved to the tailor's loom
+- Raw wool must now be processed into wool cloth
+- Volt goats now have a unique meat and leather
+- Fueled production facilities accept all wood types from Expanded Woodworking for Vegetable Garden
+- Fueled torches accept all wood types from Expanded Woodworking for Vegetable Garden
 - Painting easels are now stuffed for different woods
 - Rug making tables are now stuffed for different woods
 - Dye barrels are now stuffed for different woods
@@ -21,18 +36,6 @@
 - Wall torches are now stuffed for different wood
 - Training dummy is now stuffed for different woods
 - Meditrain tables are now stuffed for different woods
-
-### Changed
-
-
-## [0.16.0.3] - 2017-02-
-### Added
-- Seed drop ratios have been adjusted
-- Seeds have been added for various Vegetable Garden plants which did not have them
-- Removed Vegetable Garden dandelions from planters
-- Vegetable Garden flowers can now be sown in grow zones
-- Fueled production facilities accept all wood types from Expanded Woodworking for Vegetable Garden
-- Fueled torches accept all wood types from Expanded Woodworking for Vegetable Garden
 - Beefalo are now diary animals
 - Quality has been added to barn stalls
 - Quality has been added to modular tables
