@@ -16,7 +16,6 @@ Drop the latest release into your `RimWorld/Mods` folder.
 - [EPOE Hardcore LITE](https://ludeon.com/forums/index.php?topic=28731.0)
 - [Expanded Woodworking for Vegetable Garden](https://github.com/Qwynn/ExpandedWoodworkingVG/releases)
 - [Extended Storage](https://github.com/Skullywag/ExtendedStorage/releases)
-- [Facial Stuff](https://github.com/Killface1980/RW_FacialStuff/releases)
 - [Fences & Floors](https://ludeon.com/forums/index.php?topic=26964.0)
 - [Fluffy Breakdowns](https://github.com/FluffierThanThou/FluffyBreakdowns/releases)
 - [Glass + Lights](https://github.com/jacob814/Glass_N_Lights/releases)
