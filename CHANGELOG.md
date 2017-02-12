@@ -5,6 +5,8 @@
 ## [Unreleased]
 ### Added
 - Elk are no longer dairy animals
+- Healroot plants now drop raw healroot
+- Raw healroot can be processed into herbal medicine
 
 ### Removed
 
