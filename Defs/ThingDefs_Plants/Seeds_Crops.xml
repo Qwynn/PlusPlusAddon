@@ -4,7 +4,7 @@
 
 	<SeedsPlease.SeedDef ParentName="SeedBase">
 		<defName>SeedPotato</defName>
-		<label>potato seeds</label>
+		<label>potato eyes</label>
 		<plant>PlantPotato</plant>
 		<seed>
 			<baseChance>0.95</baseChance>
@@ -68,7 +68,7 @@
   
 	<SeedsPlease.SeedDef ParentName="SeedBase">
 		<defName>SeedDevilstrand</defName>
-		<label>devilstrand seeds</label>
+		<label>devilstrand spawn</label>
 		<plant>PlantDevilstrand</plant>
 		<harvest>RawDevilstrand</harvest>
 		<statBases>
@@ -214,7 +214,7 @@
 
 	<SeedsPlease.SeedDef ParentName="SeedBase">
 		<defName>Seedmushroom</defName>
-		<label>mushroom seeds</label>
+		<label>mushroom spawn</label>
 		<plant>Plantmushroom</plant>
 		<seed>
 			<baseChance>0.90</baseChance>
@@ -404,7 +404,7 @@
 	
 	<SeedsPlease.SeedDef ParentName="SeedBase">
 		<defName>SeedSteelLeaf</defName>
-		<label>steelshroom seeds</label>
+		<label>steelshroom spawn</label>
 		<plant>PlantSteelLeaf</plant>
 		<seed>
 			<baseChance>0.75</baseChance>
