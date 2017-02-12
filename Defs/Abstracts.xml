@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<!--============================== Recipes ==============================-->
+<!-- Hediffs -->
+
+	<HediffDef Name="ImplantHediffBase" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.65, 0.3, 0.9)</defaultLabelColor>
+	</HediffDef>
+
+<!-- Recipies -->
 
 	<RecipeDef Name="SurgeryOld" ParentName="SurgeryFlesh" Abstract="True">
         <effectWorking>Surgery</effectWorking>
@@ -26,7 +32,7 @@
 		</recipeUsers>
 	</RecipeDef>	
 
-<!--============================== Floors ==============================-->		
+<!-- Floors -->	
 	
 	<TerrainDef Name="Anon2FloorBase" Abstract="True">
 		<layerable>true</layerable>
@@ -45,7 +51,34 @@
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	</TerrainDef>	
 	
-<!--============================== Furniture ==============================-->	
+<!-- Furniture -->
+
+	<ThingDef Name="TableBase" Abstract="True" ParentName="FurnitureBase">
+		<thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<description>People eat off tables when chairs are placed facing them.</description>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>60</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<surfaceType>Eat</surfaceType>
+		<comps>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+	</ThingDef>
 	
     <ThingDef Name="Anon2FurnitureBase" ParentName="Anon2BuildingBase" Abstract="True">
 		<comps>
@@ -345,7 +378,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-<!--============================== Lights ==============================-->	
+<!-- Lights -->
 	
 	<ThingDef Name="StandingLampBase" ParentName="LampBase" Abstract="True">
 		<graphicData>
@@ -393,7 +426,6 @@
 		<ThingClass>Building</ThingClass>
 		<AltitudeLayer>PawnUnused</AltitudeLayer>
 		<fillPercent>0.15</fillPercent>
-		<constructEffect>ConstructWood</constructEffect>
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType>
 		<Passability>PassThroughOnly</Passability>
@@ -447,5 +479,58 @@
 		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<designationCategory>ANON2MF</designationCategory>
 	</ThingDef>
+	
+<!-- Resources -->
+
+	<ThingDef ParentName="ResourceBase" Name="WoolBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Resource/Wool</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<MarketValue>3.0</MarketValue>
+			<Mass>0.028</Mass>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>3.4</DeteriorationRate>
+		</statBases>
+		<stackLimit>100</stackLimit>
+		<stuffProps>
+			<commonality>0.15</commonality>
+			<statFactors>
+				<ArmorRating_Electric>1.2</ArmorRating_Electric>
+			</statFactors>
+		</stuffProps>
+		<thingCategories>
+			<li>Textiles</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Name="WoolClothBase" ParentName="ResourceBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Resource/Wool</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<MarketValue>3.0</MarketValue>
+			<Mass>0.028</Mass>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>3.4</DeteriorationRate>
+		</statBases>
+		<stackLimit>100</stackLimit>
+		<stuffProps>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<commonality>0.10</commonality>
+			<statFactors>
+				<ArmorRating_Electric>1.2</ArmorRating_Electric>
+			</statFactors>
+		</stuffProps>
+		<thingCategories>
+			<li>WoolCloth</li>
+		</thingCategories>
+	</ThingDef>	
 	
 </Defs>

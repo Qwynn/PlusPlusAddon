@@ -1,0 +1,237 @@
+<Buildings>
+
+<!-- Medical -->
+
+	<ThingDef ParentName="BuildingBase">
+		<DefName>IF_MeditrainTable</DefName>
+		<label>meditrain(tm) table</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<Description>Doctors hone their skills by testing their techniques on corpses.</Description>
+		<graphicData>
+			<texPath>Autopsy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<CostList>
+			<Steel>75</Steel>
+		</CostList>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(1,2)</Size>
+		<DesignationCategory>Misc</DesignationCategory>
+		<Passability>Impassable</Passability>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(-1,0,0)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<researchPrerequisites>
+			<li>MicroelectronicsBasics</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+<!-- Shooting -->	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>Target</defName>
+		<label>Target</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<graphicData>
+			<texPath>Target/Target</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<description>A target for your sharpshooters to hone their skills with.</description>
+		<size>(1,1)</size>
+		<useHitPoints>False</useHitPoints>
+		<costList>
+			<Steel>35</Steel>
+		</costList>
+		<statBases>
+			<WorkToBuild>250</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>60</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<designationCategory>Misc</designationCategory>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<DefName>ShootingRangeLeft</DefName>
+		<label>shooting range left</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<Description>The left side of the shooting range.</Description>
+		<uiIconPath>Target/WallLeft_back</uiIconPath>
+		<graphicData>
+			<texPath>Target/WallLeft</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,8)</drawSize>
+		</graphicData>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<CostList>
+			<Steel>75</Steel>
+		</CostList>
+		<altitudeLayer>Building</altitudeLayer>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>400</WorkToBuild>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(1,8)</Size>
+		<designationCategory>Misc</designationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<researchPrerequisites>
+			<li>PPCompConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>  
+	
+	<ThingDef ParentName="BuildingBase">
+		<DefName>ShootingRange</DefName>
+		<label>shooting range</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<Description>A shooting range for training shooting skill.</Description>
+		<uiIconPath>Target/WallMiddle_back</uiIconPath>
+		<graphicData>
+			<texPath>Target/WallMiddle</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,8)</drawSize>
+		</graphicData>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<CostList>
+			<Steel>75</Steel>
+		</CostList>
+		<altitudeLayer>Building</altitudeLayer>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(1,8)</Size>
+		<designationCategory>Misc</designationCategory>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-4)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<passability>PassThroughOnly</passability>
+		<researchPrerequisites>
+			<li>PPCompConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>
+  
+	<ThingDef ParentName="BuildingBase">
+		<DefName>ShootingRangeRight</DefName>
+		<label>shooting range right</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<Description>The right side of the shooting range.</Description>
+		<uiIconPath>Target/WallRight_back</uiIconPath>
+		<graphicData>
+			<texPath>Target/WallRight</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,8)</drawSize>
+		</graphicData>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<CostList>
+			<Steel>75</Steel>
+		</CostList>
+		<altitudeLayer>Building</altitudeLayer>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>400</WorkToBuild>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(1,8)</Size>
+		<designationCategory>Misc</designationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<researchPrerequisites>
+			<li>PPCompConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>
+  
+ <!-- Melee --> 
+  
+	<ThingDef ParentName="BuildingBase">
+		<DefName>MrDummy</DefName>
+		<label>training dummy</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<Description>A straw dummy for training melee skill.</Description>
+		<uiIconPath>Target/MrDummy_back</uiIconPath>
+		<graphicData>
+			<texPath>Target/MrDummy</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+		<CostList>
+			<Steel>10</Steel>
+		</CostList>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>200</WorkToBuild>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(1,1)</Size>
+		<designationCategory>Misc</designationCategory>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+	</ThingDef>
+
+</Buildings>

@@ -1,0 +1,185 @@
+<Defs>
+
+<!-- Wool Processing -->
+
+	<RecipeDef>
+		<defName>MakeWoolClothAll</defName>
+		<label>Make any wool cloth</label>
+		<description>Weaves raw wool on a loom to create woven cloth.</description>
+		<jobString>Weaving wool</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MegaslothWool</li>
+						<li>MuffaloWool</li>
+						<li>CamelHair</li>
+						<li>AlpacaWool</li>
+						<li>BeefaloWool</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MegaslothWool</li>
+				<li>MuffaloWool</li>
+				<li>CamelHair</li>
+				<li>AlpacaWool</li>
+				<li>BeefaloWool</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<recipeUsers>
+			<li>TableLoom</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeWoolCloth</defName>
+		<label>Make blended wool cloth</label>
+		<description>Weaves any type of wool on a loom to create blended woven cloth.</description>
+		<jobString>Weaving wool</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MegaslothWool</li>
+						<li>MuffaloWool</li>
+						<li>CamelHair</li>
+						<li>AlpacaWool</li>
+						<li>BeefaloWool</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MegaslothWool</li>
+				<li>MuffaloWool</li>
+				<li>CamelHair</li>
+				<li>AlpacaWool</li>
+				<li>BeefaloWool</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<WoolCloth>10</WoolCloth>
+		</products>
+		<recipeUsers>
+			<li>TableLoom</li>
+		</recipeUsers>
+	</RecipeDef>
+
+<!-- Cloth Processing -->	
+	
+	<RecipeDef ParentName="ProcessRaw">
+		<defName>ProcessRawCotton</defName>
+		<label>weave cotton cloth</label>
+		<description>Weave Raw Cotton into Cloth.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCotton</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawCotton</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Cloth>25</Cloth>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>4</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>	
+	
+	<RecipeDef ParentName="ProcessRaw">
+		<defName>ProcessRawDevilstrand</defName>
+		<label>weave devilstrand cloth</label>
+		<description>Weave Raw Devilstrand into Cloth.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawDevilstrand</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawDevilstrand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DevilstrandCloth>25</DevilstrandCloth>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>8</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+<!-- Salvaging -->	
+	
+	<RecipeDef>
+		<defName>SalvageApparel</defName>
+		<label>salvage apparel</label>
+		<description>Salvage unwanted apparel into raw materials.</description>
+		<jobString>Salvaging apparel.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+				<categories>
+					<li>Apparel</li>
+				</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<specialProducts>
+			<li>Smelted</li>
+		</specialProducts>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Apparel</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+		<!--<li>TableLoom</li>-->
+		</recipeUsers>
+	</RecipeDef>
+	
+</Defs>

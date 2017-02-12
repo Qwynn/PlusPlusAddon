@@ -1,0 +1,30 @@
+<Defs>
+
+<!-- Gardening -->	
+
+	<DesignationCategoryDef>
+		<DefName>GardenTools</DefName>
+		<label>Gardening</label>
+		<description>Things for growing crops.</description>
+		<order>16</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+			<li>Designator_SmoothFloor</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+  
+<!-- Lighting -->	  
+  
+    <DesignationCategoryDef>
+		<DefName>ANON2MF</DefName>
+		<label>Lighting</label>
+		<description>Lighting up the rim.</description>
+		<order>450</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+</Defs>

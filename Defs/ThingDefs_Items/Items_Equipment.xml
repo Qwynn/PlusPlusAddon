@@ -1,0 +1,101 @@
+<ThingDefs>
+
+<!-- Headwear -->
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>Apparel_GM</defName>
+		<label>cloth gasmask</label>
+		<description>The gasmask is used to protect the user from inhaling airborne pollutants and toxic gases. Although very usefull, it limits your sight and makes shooting and working more difficult.</description>
+		<graphicData>
+			<texPath>Things/Apparel/gas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>	
+		<statBases>
+			<WorkToMake>6500</WorkToMake>		
+			<DeteriorationRate>5</DeteriorationRate>	
+			<MaxHitPoints>100</MaxHitPoints>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<Insulation_Cold>-4</Insulation_Cold>
+			<Insulation_Heat>-2</Insulation_Heat>	  
+		</statBases>
+		<costList>
+			<Neutroamine>10</Neutroamine>	
+			<Component>1</Component>
+			<Cloth>30</Cloth>
+		</costList>	
+		<equippedStatOffsets>	
+			<ToxicSensitivity>-0.5</ToxicSensitivity>		
+			<ShootingAccuracy>-0.03</ShootingAccuracy>
+			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>	  
+		</equippedStatOffsets>	
+		<apparel>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<worngraphicPath>Things/Apparel/gas</worngraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<commonality>0.05</commonality>
+			<tags>
+				<li>Outlander</li>
+				<li>Military</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+<!-- Tools -->
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp">
+		<defName>MeleeWeapon_Pickaxe</defName>
+		<label>Mattock</label>
+		<description>A versatile hand tool used for digging and chopping, and similar to the pickaxe.</description>
+		<graphicData>
+			<texPath>Weapon/Pickaxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<weaponTags>
+			<li>Melee</li>
+			<li>Industrial</li>     
+			<li>Medieval</li>
+		</weaponTags>
+		<soundInteract>InteractPistol</soundInteract>
+		<canBeSpawningInventory>true</canBeSpawningInventory>
+		<tradeability>Sellable</tradeability>
+		<costStuffCount>100</costStuffCount>
+		<statBases>
+			<WorkToMake>25000</WorkToMake>
+			<MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
+			<MeleeWeapon_Cooldown>2</MeleeWeapon_Cooldown>
+			<Mass>4</Mass>	  
+		</statBases>
+		<equippedStatOffsets>
+				<MiningSpeed>0.20</MiningSpeed>
+				<PlantWorkSpeed>0.15</PlantWorkSpeed>	
+		</equippedStatOffsets>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<verbs>
+			<li>
+				<verbClass>Verb_MeleeAttack</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<meleeDamageDef>Blunt</meleeDamageDef>
+			</li>
+		</verbs>
+		<smeltProducts>
+			<Steel>3</Steel>
+		</smeltProducts>	
+	</ThingDef> 
+
+</ThingDefs>

@@ -1,0 +1,1142 @@
+<ThingDefs>
+
+<!-- Fueled -->
+
+	<ThingDef ParentName="BenchBase">
+		<defName>FueledStove</defName>
+		<label>fueled stove</label>
+		<ThingClass>Building_WorkTable_HeatPush</ThingClass>
+		<Description>A simple fueled stove with an attached countertop for preparing meals.</Description>
+		<graphicData>
+			<texPath>Things/Building/Production/TableStoveFueled</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<constructEffect>ConstructMetal</constructEffect>
+		<CostList>
+			<Steel>80</Steel>
+		</CostList>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(3,1)</Size>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<recipes>
+			<li>CookMealSimple</li>
+			<li>CookMealFine</li>
+			<li>CookMealLavish</li>
+			<li>MakePemmican</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>CookingTools</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>160.0</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Coal</li>
+						<li>WoodLog_Oak</li>
+						<li>WoodLog_Poplar</li>
+						<li>WoodLog_Pine</li>
+						<li>WoodLog_Birch</li>
+						<li>WoodLog_Cecropia</li>
+						<li>WoodLog_Teak</li>
+						<li>WoodLog_WeepingWillow</li>
+						<li>WoodLog_JapaneseMaple</li>
+						<li>WoodLog_CherryBlossom</li>
+						<li>WoodLog_Camellia</li>
+						<li>WoodLog_Acacia</li>
+						<li>WoodLog_Palm</li>
+						<li>Bamboo</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<isMealSource>true</isMealSource>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<heatPerTickWhileWorking>0.25</heatPerTickWhileWorking>
+		</building>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BenchBase">
+		<DefName>Oven</DefName>
+		<label>oven</label>
+		<ThingClass>Building_WorkTable_HeatPush</ThingClass>
+		<Description>A stone oven used for baking.</Description>
+		
+		<graphicData>
+			<texPath>Things/Building/Oven</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.33,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(2,1)</Size>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<staticSunShadowHeight>0.3</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>CookingTools</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(217,112,33,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>100.0</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Coal</li>
+						<li>WoodLog_Oak</li>
+						<li>WoodLog_Poplar</li>
+						<li>WoodLog_Pine</li>
+						<li>WoodLog_Birch</li>
+						<li>WoodLog_Cecropia</li>
+						<li>WoodLog_Teak</li>
+						<li>WoodLog_WeepingWillow</li>
+						<li>WoodLog_JapaneseMaple</li>
+						<li>WoodLog_CherryBlossom</li>
+						<li>WoodLog_Camellia</li>
+						<li>WoodLog_Acacia</li>
+						<li>WoodLog_Palm</li>
+						<li>Bamboo</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+			</li>
+		</comps>
+		<building>
+			<isMealSource>true</isMealSource>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BenchBase">
+		<DefName>HandCanningstove</DefName>
+		<label>fueled food prep table</label>
+		<ThingClass>Building_WorkTable_HeatPush</ThingClass>
+		<Description>An unpowered version of the canning stove, food press, and prep table. Makes simple items. Requires 40% work to make items here.</Description>
+		<graphicData>
+			<texPath>Things/Building/Canningstove</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.33,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<CostList>
+			<Steel>40</Steel>
+         </CostList>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkTableWorkSpeedFactor>0.6</WorkTableWorkSpeedFactor>
+		</statBases>
+		<Size>(2,1)</Size>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<staticSunShadowHeight>0.3</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<recipes>
+			<li>CookMealSimple</li>
+			<li>Maketofu</li>
+            <li>MakePolenta</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<isMealSource>true</isMealSource>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>CookingTools</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>100.0</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Coal</li>
+						<li>WoodLog_Oak</li>
+						<li>WoodLog_Poplar</li>
+						<li>WoodLog_Pine</li>
+						<li>WoodLog_Birch</li>
+						<li>WoodLog_Cecropia</li>
+						<li>WoodLog_Teak</li>
+						<li>WoodLog_WeepingWillow</li>
+						<li>WoodLog_JapaneseMaple</li>
+						<li>WoodLog_CherryBlossom</li>
+						<li>WoodLog_Camellia</li>
+						<li>WoodLog_Acacia</li>
+						<li>WoodLog_Palm</li>
+						<li>Bamboo</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>PPCompConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BenchBase">
+		<DefName>FueledCandyTable</DefName>
+		<label>fueled sweets table</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>Makes sweet treates.</Description>
+		<graphicData>
+			<texPath>Things/Building/Candytable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.33,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<costList>
+			<Steel>60</Steel>
+		</costList>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>4500</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<Size>(2,1)</Size>
+		<DesignationCategory>Production</DesignationCategory>
+		<fillPercent>1</fillPercent>
+		<Passability>Impassable</Passability>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<staticSunShadowHeight>0.3</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<recipes>
+			<li>MakeHardcandy</li>
+			<li>MakeCaramel</li>
+			<li>MakeTaffy</li>
+			<li>MakeIcecream</li>
+			<li>MakeYogurt</li>
+			<li>MakeSmoothie</li>	
+			<li>CraftChocolate</li>	
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>CookingTools</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>100.0</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Coal</li>
+						<li>WoodLog_Oak</li>
+						<li>WoodLog_Poplar</li>
+						<li>WoodLog_Pine</li>
+						<li>WoodLog_Birch</li>
+						<li>WoodLog_Cecropia</li>
+						<li>WoodLog_Teak</li>
+						<li>WoodLog_WeepingWillow</li>
+						<li>WoodLog_JapaneseMaple</li>
+						<li>WoodLog_CherryBlossom</li>
+						<li>WoodLog_Camellia</li>
+						<li>WoodLog_Acacia</li>
+						<li>WoodLog_Palm</li>
+						<li>Bamboo</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+			</li>
+		</comps>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+    	<researchPrerequisites>
+			<li>CookingI</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BenchBase">
+		<DefName>FueledSmithy</DefName>
+		<label>fueled smithy</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>A fueled station equipped for smithing non-mechanical weapons and tools.</Description>
+		<graphicData>
+			<texPath>Things/Building/Production/TableSmithingFueled</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<CostList>
+			<Steel>100</Steel>
+		</CostList>
+		<constructEffect>ConstructWood</constructEffect>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-3</Cleanliness>
+		</statBases>
+		<Size>(3,1)</Size>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>80.0</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Coal</li>
+						<li>WoodLog_Oak</li>
+						<li>WoodLog_Poplar</li>
+						<li>WoodLog_Pine</li>
+						<li>WoodLog_Birch</li>
+						<li>WoodLog_Cecropia</li>
+						<li>WoodLog_Teak</li>
+						<li>WoodLog_WeepingWillow</li>
+						<li>WoodLog_JapaneseMaple</li>
+						<li>WoodLog_CherryBlossom</li>
+						<li>WoodLog_Camellia</li>
+						<li>WoodLog_Acacia</li>
+						<li>WoodLog_Palm</li>
+						<li>Bamboo</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites><li>Smithing</li></researchPrerequisites>
+	</ThingDef>	
+	
+<!-- Unpowered -->		
+	
+	 <ThingDef ParentName="BenchBase">
+		<defName>PlantProcessingTable</defName>
+		<label>Plant Processing Bench</label>
+		<thingClass>Building_WorkTable</thingClass>
+		<Description>Plant processing activities.</Description>
+		<graphicData>
+			<texPath>Things/Building/seedextractor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(3,1)</Size>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+	
+	<ThingDef ParentName="VG_BenchBase">
+		<defName>GrindStone</defName>
+		<label>Milling Stone</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>A small muscle-powered grinding stone for quickly grinding raw plants.</Description>
+		<graphicData>
+			<texPath>Things/Building/GrindingStone</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<CostList>
+			<Steel>10</Steel>
+		</CostList>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(1,1)</Size>
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>60</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<recipes>
+			<li>CraftFlour</li>
+			<li>GroundSugar</li>
+			<li>CraftCornmeal</li>
+			<li>CraftBulkFlour</li>
+			<li>CraftBulkSugar</li>
+			<li>CraftBulkCornMeal</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<designationCategory>Production</designationCategory>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>CookingTools</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+	</ThingDef>	
+	
+	<ThingDef ParentName="VG_BenchBase">
+		<DefName>TableLoom</DefName>
+		<label>tailor's loom</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>A tailor's table used to spin raw materials into usable cloth.</Description>
+		<graphicData>
+			<texPath>Things/Building/Loom</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		    <drawSize>(2.33,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<CostList>
+			<Steel>30</Steel>
+		</CostList>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2250</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(2,1)</Size>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<recipes>
+			<li>MakeCloth</li>
+			<li>MakeLinen</li>
+			<li>MakeDevilstrand</li>
+			<li>MakeSynthreadCloth</li>
+			<li>MakeHyperweaveCloth</li>
+		</recipes>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+       	<researchPrerequisites>
+			<li>ComplexClothing</li>
+	    </researchPrerequisites>
+	</ThingDef>	
+	
+	<ThingDef ParentName="BenchBase">
+		<DefName>BenchWoolLoom</DefName>
+		<Label>wool loom</Label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>A bench with looms to weave wool into a strong and warm cloth.</Description>
+		<graphicData>
+			<texPath>Things/BenchWoolLoom</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.5,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<CostList>
+			<Steel>20</Steel>
+		</CostList>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>750</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(3,1)</Size>
+	<!--<DesignationCategory>Production</DesignationCategory>
+		<recipes>
+			<li>MakeWoolCloth</li>
+		</recipes>-->
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>60</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<researchPrerequisites><li>CarpetMaking</li></researchPrerequisites>
+	</ThingDef>	
+	
+	<ThingDef ParentName="BuildingBase">
+		<DefName>BarrelDye</DefName>
+	    <label>dye barrel</label>
+	    <ThingClass>Building_WorkTable</ThingClass>
+	    <Description>A barrel for dyeing cloth into various colors.</Description>
+	    <graphicData>
+			<texPath>Things/AreaRugs/Building/DyeTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+	    </graphicData>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+	    <CostList>
+			<Steel>25</Steel>
+		</CostList>
+	    <AltitudeLayer>Building</AltitudeLayer>
+	    <fillPercent>0.5</fillPercent>
+	    <useHitPoints>True</useHitPoints>
+	    <statBases>
+			<WorkToBuild>2500</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-5</Cleanliness>
+	    </statBases>
+	    <Size>(1,1)</Size>
+	    <DesignationCategory>Production</DesignationCategory>
+	    <Passability>PassThroughOnly</Passability>
+	    <pathCost>70</pathCost>
+	    <hasInteractionCell>True</hasInteractionCell>
+	    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	    <surfaceType>Item</surfaceType>
+	    <inspectorTabs>
+			<li>ITab_Bills</li>
+	    </inspectorTabs>
+	    <building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+	    </building>
+	    <comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+	    </comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites><li>CarpetMaking</li></researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+	    <DefName>TableRugMaking</DefName>
+	    <label>rug making table</label>
+	    <ThingClass>Building_WorkTable</ThingClass>
+	    <Description>A table with all the tools needed to make rugs out of various fabrics.</Description>
+	    <graphicData>
+			<texPath>Things/AreaRugs/Building/RugTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,1)</drawSize>
+	    </graphicData>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	    <CostList>
+			<Steel>100</Steel>
+		</CostList>
+	    <AltitudeLayer>Building</AltitudeLayer>
+	    <fillPercent>0.5</fillPercent>
+	    <useHitPoints>True</useHitPoints>
+	    <statBases>
+			<WorkToBuild>2500</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-5</Cleanliness>
+	    </statBases>
+	    <Size>(2,1)</Size>
+	    <DesignationCategory>Production</DesignationCategory>
+	    <Passability>PassThroughOnly</Passability>
+	    <pathCost>70</pathCost>
+	    <hasInteractionCell>True</hasInteractionCell>
+	    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	    <surfaceType>Item</surfaceType>
+	    <inspectorTabs>
+			<li>ITab_Bills</li>
+	    </inspectorTabs>
+	    <building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+	    </building>
+	    <comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+	    </comps>
+		<placeWorkers>
+				<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites><li>CarpetMaking</li></researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="FurnitureBase">
+		<DefName>AJO_Easel</DefName>
+		<label>painting easel</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>An easel equipped for artistic painting.</Description>
+		<graphicData>
+			<texPath>Cupro/Object/Furniture/Easel/Easel</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<blockLight>false</blockLight>
+		<uiIconPath>Cupro/Object/Furniture/Easel/Easel_front</uiIconPath>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+			<EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
+		</statBases>
+		<size>(1,1)</size>
+		<DesignationCategory>Production</DesignationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>40</pathCost>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<researchPrerequisites>
+			<li>PPConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>	
+	
+	<ThingDef ParentName="FurnitureBase">
+		<DefName>AJO_WritingTable</DefName>
+		<label>writing table</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>A simple table for writing at.</Description>
+		<graphicData>
+			<texPath>Cupro/Object/Furniture/WritingTable/WritingTable</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Cupro/Object/Furniture/WritingTable/WritingTable_back</uiIconPath>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>10</Beauty>
+		</statBases>
+		<size>(1,1)</size>
+		<DesignationCategory>Production</DesignationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>40</pathCost>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>AJO_BookRack</li>
+					<li>AJO_Bookshelf</li>
+					<li>AJO_Bookcase</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>	
+	
+<!-- Powered -->	
+	
+	<ThingDef ParentName="BenchBase">
+		<DefName>ElectricTableRepair</DefName>
+		<label>electric repair bench</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>A workbench equipped with all the tools required to repair damaged items.</Description>
+		<graphicData>
+			<texPath>Things/Building/Production/TableRepair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<costStuffCount>75</costStuffCount>
+		<CostList>
+			<Steel>50</Steel>
+			<Component>3</Component>
+		</CostList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2500</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(3,1)</Size>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<unpoweredWorkTableWorkSpeedFactor>0.4</unpoweredWorkTableWorkSpeedFactor>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>120</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>RepairItems</li>
+		</researchPrerequisites>
+	</ThingDef>	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>GlassworkTable</defName>
+		<Label>glassworks</Label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>A table with all the tools you need to make glass.</Description>
+		<graphicData>
+			<texPath>Things/Building/Production/GlassworkTable</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<CostList>
+				<Steel>60</Steel>
+				<Component>2</Component>
+		</CostList>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>1300</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-6</Cleanliness>
+		</statBases>
+		<Size>(2,1)</Size>
+		<surfaceType>Item</surfaceType>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<recipes>
+			<li>MakeGlass</li>
+			<li>MakeCircularGlass</li>
+			<li>MakeMolotov</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>200</basePowerConsumption>
+				<!--<soundPowerOn>PowerOnSmall</soundPowerOn>
+				<soundPowerOff>PowerOffSmall</soundPowerOff>-->
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(210,112,33,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>11</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<heatPerTickWhileWorking>0.5</heatPerTickWhileWorking>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites><li>GlassworksResearch</li></researchPrerequisites>
+	</ThingDef>	
+	
+  	<ThingDef ParentName="BuildingBase">
+		<defName>ReinforcedGlassworkTable</defName>
+		<Label>reinforced glassworks</Label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>A table used for turning normal glass into safety glass.</Description>
+		<graphicData>
+			<texPath>Things/Building/Production/ReinforcedGlassworkTable</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<CostList>
+				<Steel>40</Steel>
+				<Glass>8</Glass>
+				<Component>10</Component>
+		</CostList>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>900</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(1,1)</Size>
+		<surfaceType>Item</surfaceType>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<recipes>
+			<li>MakeReinforcedGlass</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>100</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(210,112,33,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>12</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<heatPerTickWhileWorking>0.2</heatPerTickWhileWorking>
+		</building>
+		<researchPrerequisites><li>ReinforcedGlassResearch</li></researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>		
+	
+	<ThingDef ParentName="BenchBase">
+		<DefName>AJO_TableArcadeConstruction</DefName>
+		<label>arcade construction table</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>A work station for assembling arcades, as well as copying cartridge data.</Description>
+		<graphicData>
+			<texPath>Cupro/Object/Station/TableArcadeConstruction/TableArcadeConstruction</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<CostList>
+			<Steel>50</Steel>
+			<Component>1</Component>
+		</CostList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>0.1</Flammability>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<Size>(3,1)</Size>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<startElectricalFires>true</startElectricalFires>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(73,123,138,0)</glowColor>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>AJO_ArcadeConstruction</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>	
+	
+</ThingDefs>

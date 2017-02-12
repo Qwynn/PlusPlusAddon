@@ -1,0 +1,68 @@
+<ResearchProjectDefs>
+
+<!-- Construction -->
+
+	<ResearchProjectDef>
+		<defName>PPConstruction</defName>
+		<label>construction</label>
+		<description>The most basic forms of construction begin to build the bricks of civilization. Unlocks simple furniture.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<researchViewX>4</researchViewX>
+		<researchViewY>5.50</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>PPAdvConstruction</defName>
+		<label>advanced construction</label>
+		<description>Skilled craftsmen master their trades over wood, stone, and metal. Unlocks more advanced furniture, fueled stoves, and embrasures.</description>
+		<baseCost>750</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>PPConstruction</li>
+		</prerequisites>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<researchViewX>4</researchViewX>
+		<researchViewY>5.50</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>PPCompConstruction</defName>
+		<label>complex construction</label>
+		<description>When function meets artistic design and intricate details. Unlocks complex furniture, hoppers, and fueled food preperation tables.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>PPAdvConstruction</li>
+		</prerequisites>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<researchViewX>4</researchViewX>
+		<researchViewY>5.50</researchViewY>
+	</ResearchProjectDef>
+	
+<!-- Upholstery -->	
+	
+	<ResearchProjectDef>
+		<defName>PPUpholstery</defName>
+		<label>upholstery</label>
+		<description>The work of providing furniture with padding, springs, webbing, and fabric or leather covers. Unlocks soft, comfortable furnishings.</description>
+		<baseCost>750</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>PPAdvConstruction</li>
+		</prerequisites>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<researchViewX>4</researchViewX>
+		<researchViewY>5.50</researchViewY>
+	</ResearchProjectDef>	
+  
+ </ResearchProjectDefs>

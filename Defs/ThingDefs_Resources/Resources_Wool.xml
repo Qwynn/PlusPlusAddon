@@ -1,0 +1,411 @@
+﻿<Resources>
+
+<!-- Wool Cloth -->
+	
+	<ThingDef ParentName="WoolClothBase">
+		<defName>WoolCloth</defName>
+		<label>blended wool cloth</label>
+		<description>Wool that has been woven on a loom into a thick, warm cloth.</description>
+		<graphicData>
+			<texPath>Things/WoolCloth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(61,61,61)</color>
+		</graphicData>
+		<stuffProps>
+			<commonality>0.05</commonality>
+			<color>(61,61,61)</color>
+		    <statOffsets>
+				<ArmorRating_Heat>0.05</ArmorRating_Heat>
+				<ArmorRating_Electric>0.02</ArmorRating_Electric>
+			</statOffsets>
+			<statFactors>
+				<MarketValue>10.0</MarketValue>
+				<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+				<ArmorRating_Heat>2.0</ArmorRating_Heat>
+				<Insulation_Cold>3.0</Insulation_Cold>
+				<Insulation_Heat>3.0</Insulation_Heat>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="WoolClothBase">
+		<defName>WoolClothMegasloth</defName>
+		<label>megasloth wool cloth</label>
+		<description>Wool that has been woven on a loom into a thick, warm cloth.</description>
+		<graphicData>
+			<texPath>Things/WoolCloth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(189,161,116)</color>
+		</graphicData>
+		<stuffProps>
+			<color>(189,161,116)</color>
+			<commonality>0.05</commonality>
+		    <statOffsets>
+				<ArmorRating_Heat>0.08</ArmorRating_Heat>
+				<ArmorRating_Electric>0.02</ArmorRating_Electric>
+			</statOffsets>
+			<statFactors>
+				<MarketValue>18.0</MarketValue>
+				<ArmorRating_Sharp>1.3</ArmorRating_Sharp>
+				<ArmorRating_Heat>2.2</ArmorRating_Heat>
+				<Insulation_Cold>3.1</Insulation_Cold>
+				<Insulation_Heat>3.1</Insulation_Heat>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="WoolClothBase">
+		<defName>WoolClothMuffalo</defName>
+		<label>muffalo wool cloth</label>
+		<description>Wool that has been woven on a loom into a thick, warm cloth.</description>
+		<graphicData>
+			<texPath>Things/WoolCloth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(179,192,186)</color>
+		</graphicData>
+		<stuffProps>
+			<color>(179,192,186)</color>
+			<commonality>0.05</commonality>
+		    <statOffsets>
+				<ArmorRating_Heat>0.08</ArmorRating_Heat>
+				<ArmorRating_Electric>0.02</ArmorRating_Electric>
+			</statOffsets>
+			<statFactors>
+				<MarketValue>14.0</MarketValue>
+				<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+				<ArmorRating_Heat>2.2</ArmorRating_Heat>
+				<Insulation_Cold>3.0</Insulation_Cold>
+				<Insulation_Heat>3.0</Insulation_Heat>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="WoolClothBase">
+		<defName>WoolClothCamel</defName>
+		<label>camelhair cloth</label>
+		<description>Camelhair that has been woven on a loom into a thick, warm cloth.</description>
+		<graphicData>
+			<texPath>Things/WoolCloth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(220,179,132)</color>
+		</graphicData>
+		<stuffProps>
+			<color>(220,179,132)</color>
+			<commonality>0.05</commonality>
+		    <statOffsets>
+				<ArmorRating_Heat>0.17</ArmorRating_Heat>
+				<ArmorRating_Electric>0.02</ArmorRating_Electric>
+			</statOffsets>
+			<statFactors>
+				<MarketValue>16.0</MarketValue>
+				<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+				<ArmorRating_Heat>2.5</ArmorRating_Heat>
+				<Insulation_Cold>2.8</Insulation_Cold>
+				<Insulation_Heat>3.6</Insulation_Heat>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="WoolClothBase">
+		<defName>WoolClothAlpaca</defName>
+		<label>alpaca wool cloth</label>
+		<description>Wool that has been woven on a loom into a thick, warm cloth.</description>
+		<graphicData>
+			<texPath>Things/WoolCloth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(237,216,174)</color>
+		</graphicData>
+		<stuffProps>
+			<color>(237,216,174)</color>
+			<commonality>0.05</commonality>
+		    <statOffsets>
+				<ArmorRating_Heat>0.05</ArmorRating_Heat>
+			</statOffsets>
+			<statFactors>
+				<MarketValue>12.0</MarketValue>
+				<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+				<ArmorRating_Heat>1.8</ArmorRating_Heat>
+				<Insulation_Cold>2.9</Insulation_Cold>
+				<Insulation_Heat>3.4</Insulation_Heat>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="WoolClothBase">
+		<defName>WoolClothBeefalo</defName>
+		<label>beefalo wool cloth</label>
+		<description>Wool that has been woven on a loom into a thick, warm cloth.</description>
+		<graphicData>
+			<texPath>Things/WoolCloth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(159,172,166)</color>
+		</graphicData>
+		<stuffProps>
+			<color>(159,172,166)</color>
+			<commonality>0.05</commonality>
+		    <statOffsets>
+				<ArmorRating_Heat>0.08</ArmorRating_Heat>
+				<ArmorRating_Electric>0.02</ArmorRating_Electric>
+			</statOffsets>
+			<statFactors>
+				<MarketValue>14.0</MarketValue>
+				<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+				<ArmorRating_Heat>2.2</ArmorRating_Heat>
+				<Insulation_Cold>3.0</Insulation_Cold>
+				<Insulation_Heat>3.0</Insulation_Heat>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="WoolClothBase">
+		<defName>WoolClothAngora</defName>
+		<label>angora wool cloth</label>
+		<description>Wool that has been woven on a loom into a thick, warm cloth.</description>
+		<graphicData>
+			<texPath>Things/WoolCloth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255,255,255)</color>
+		</graphicData>
+		<stuffProps>
+			<color>((255,255,255)</color>
+			<commonality>0.05</commonality>
+		    <statOffsets>
+				<ArmorRating_Heat>0.05</ArmorRating_Heat>
+				<ArmorRating_Electric>0.05</ArmorRating_Electric>
+			</statOffsets>
+			<statFactors>
+				<MarketValue>16.0</MarketValue>
+				<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				<ArmorRating_Heat>0.1</ArmorRating_Heat>
+				<Insulation_Cold>3.4</Insulation_Cold>
+				<Insulation_Heat>3.2</Insulation_Heat>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="WoolClothBase">
+		<defName>WoolClothLlama</defName>
+		<label>llama wool cloth</label>
+		<description>Wool that has been woven on a loom into a thick, warm cloth.</description>
+		<graphicData>
+			<texPath>Things/WoolCloth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(114,64,45)</color>
+		</graphicData>
+		<stuffProps>
+			<color>(114,64,45)</color>
+			<commonality>0.05</commonality>
+		    <statOffsets>
+				<ArmorRating_Heat>0.05</ArmorRating_Heat> 
+				<ArmorRating_Electric>0.05</ArmorRating_Electric> 
+			</statOffsets>
+			<statFactors>
+				<MarketValue>12.0</MarketValue>
+				<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+				<ArmorRating_Heat>1.8</ArmorRating_Heat>
+				<Insulation_Cold>2.9</Insulation_Cold> 
+				<Insulation_Heat>3.4</Insulation_Heat> 
+			</statFactors>
+		</stuffProps>
+	</ThingDef>	
+	
+<!-- Raw Wool -->
+
+	<ThingDef ParentName="WoolBase">
+		<defName>MegaslothWool</defName>
+		<label>Megasloth wool</label>
+		<description>While somewhat coarse, megasloth wool's long fibers make it very strong. It is very warm.</description>
+		<graphicData>
+			<color>(189,161,116)</color>
+		</graphicData>
+		<stuffProps>
+			<color>(189,161,116)</color>
+			<commonality>0.15</commonality>
+			<statOffsets>
+				<ArmorRating_Heat>0.08</ArmorRating_Heat>
+				<ArmorRating_Electric>0.02</ArmorRating_Electric>
+			</statOffsets>
+			<statFactors>
+				<ArmorRating_Sharp>1.3</ArmorRating_Sharp>
+				<ArmorRating_Heat>2.2</ArmorRating_Heat>
+				<Insulation_Cold>3.1</Insulation_Cold>
+				<Insulation_Heat>3.1</Insulation_Heat>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<WoolClothMegasloth>10</WoolClothMegasloth>
+		</butcherProducts>
+	</ThingDef>
+
+	<ThingDef ParentName="WoolBase">
+		<defName>MuffaloWool</defName>
+		<label>muffalo wool</label>
+		<description>Soft, light and provides very good insulation. Wool clothes can keep the body warm even in extreme conditions.</description>
+		<graphicData>
+			<color>(179,192,186)</color>
+		</graphicData>
+		<stuffProps>
+			<color>(179,192,186)</color>
+			<commonality>0.15</commonality>
+			<statOffsets>
+				<ArmorRating_Heat>0.08</ArmorRating_Heat>
+				<ArmorRating_Electric>0.02</ArmorRating_Electric>
+			</statOffsets>
+			<statFactors>
+				<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+				<ArmorRating_Heat>2.2</ArmorRating_Heat>
+				<Insulation_Cold>3.0</Insulation_Cold>
+				<Insulation_Heat>3.0</Insulation_Heat>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<WoolClothMuffalo>10</WoolClothMuffalo>
+		</butcherProducts>
+	</ThingDef>
+
+	<ThingDef ParentName="WoolBase">
+		<defName>CamelHair</defName>
+		<label>camelhair</label>
+		<description>Camelhair clothing is usually worn by desert travelers to protect them from the heat. It provides excellent insulation due to its thermostatic properties.</description>
+		<graphicData>
+			<color>(220,179,132)</color>
+		</graphicData>
+		<stuffProps>
+			<color>(220,179,132)</color>
+			<commonality>0.15</commonality>
+			<statOffsets>
+				<ArmorRating_Heat>0.17</ArmorRating_Heat>
+				<ArmorRating_Electric>0.02</ArmorRating_Electric>
+			</statOffsets>
+			<statFactors>
+				<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+				<ArmorRating_Heat>2.5</ArmorRating_Heat>
+				<Insulation_Cold>2.8</Insulation_Cold>
+				<Insulation_Heat>3.6</Insulation_Heat>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<WoolClothCamel>10</WoolClothCamel>
+		</butcherProducts>
+	</ThingDef>
+  
+	<ThingDef ParentName="WoolBase">
+		<defName>AlpacaWool</defName>
+		<label>alpaca wool</label>
+		<description>The remarkably soft wool of an alpaca. It is very warm.</description>
+		<graphicData>
+			<color>(237,216,174)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>6.0</MarketValue>
+			<DeteriorationRate>2.6</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<color>(180,148,109)</color>
+			<commonality>0.15</commonality>
+			<statOffsets>
+				<ArmorRating_Heat>0.05</ArmorRating_Heat>
+			</statOffsets>
+			<statFactors>
+				<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+				<ArmorRating_Heat>1.8</ArmorRating_Heat>
+				<Insulation_Cold>2.9</Insulation_Cold>
+				<Insulation_Heat>3.4</Insulation_Heat>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<WoolClothAlpaca>10</WoolClothAlpaca>
+		</butcherProducts>
+	</ThingDef>
+	
+	<ThingDef ParentName="WoolBase">
+		<defName>BeefaloWool</defName>
+		<label>beefalo wool</label>
+		<description>Soft, light and provides very good insulation. Wool clothes can keep the body warm even in extreme conditions.</description>
+		<graphicData>
+			<color>(159,172,166)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>6.0</MarketValue>
+			<DeteriorationRate>2.6</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<color>(159,172,166)</color>
+			<commonality>0.15</commonality>
+			<statOffsets>
+				<ArmorRating_Heat>0.08</ArmorRating_Heat>
+				<ArmorRating_Electric>0.02</ArmorRating_Electric>
+			</statOffsets>
+			<statFactors>
+				<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+				<ArmorRating_Heat>2.2</ArmorRating_Heat>
+				<Insulation_Cold>3.0</Insulation_Cold>
+				<Insulation_Heat>3.0</Insulation_Heat>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<WoolClothBeefalo>10</WoolClothBeefalo>
+		</butcherProducts>
+	</ThingDef>
+
+	<ThingDef ParentName="WoolBase">
+		<defName>AngoraWool</defName>
+		<label>angora wool</label>
+		<description>A light silky wool produced by the angora rabbit, it is very warm.</description>
+		<graphicData>
+			<color>(255,255,255)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>16.0</MarketValue>
+			<DeteriorationRate>2.6</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<color>(255,255,255)</color>
+			<commonality>0.15</commonality>
+			<statOffsets>
+				<ArmorRating_Heat>0.05</ArmorRating_Heat>
+				<ArmorRating_Electric>0.05</ArmorRating_Electric>
+			</statOffsets>
+			<statFactors>
+				<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				<ArmorRating_Heat>0.1</ArmorRating_Heat>
+				<Insulation_Cold>3.4</Insulation_Cold>
+				<Insulation_Heat>3.2</Insulation_Heat>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<WoolClothAngora>10</WoolClothAngora>
+		</butcherProducts>
+	</ThingDef>
+	
+	<ThingDef ParentName="WoolBase">
+		<defName>LlamaWool</defName>
+		<label>llama wool</label>
+		<description>Soft wool from a llama. It is very warm.</description>
+		<graphicData>
+			<color>(114,64,45)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>4.0</MarketValue>
+			<DeteriorationRate>2.6</DeteriorationRate>
+		</statBases>	
+		<stuffProps>
+			<color>(114,64,45)</color> 
+			<commonality>0.15</commonality>
+			<statOffsets>
+				<ArmorRating_Heat>0.05</ArmorRating_Heat> 
+				<ArmorRating_Electric>0.05</ArmorRating_Electric> 
+			</statOffsets>
+			<statFactors>
+				<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+				<ArmorRating_Heat>1.8</ArmorRating_Heat>
+				<Insulation_Cold>2.9</Insulation_Cold> 
+				<Insulation_Heat>3.4</Insulation_Heat> 
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<WoolClothLlama>10</WoolClothLlama>
+		</butcherProducts>
+	</ThingDef>	
+	
+</Resources>

@@ -1,0 +1,12 @@
+<ThingCategoryDefs>
+ 
+<!-- Wool Cloth --> 
+ 
+	<ThingCategoryDef>
+         <defName>WoolCloth</defName>
+         <label>Wool cloth</label>
+         <parent>Textiles</parent>
+         <iconPath>WoolCloth</iconPath>
+	</ThingCategoryDef> 
+		
+</ThingCategoryDefs>	

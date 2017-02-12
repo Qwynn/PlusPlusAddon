@@ -1,0 +1,289 @@
+<Buildings>
+
+<!-- Small Tables -->
+
+	<ThingDef ParentName="Anon2TableBase">
+		<defName>Anon2TableSmall</defName>
+		<label>table (small)</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/TableStuff/TableSmall</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+			<damageData>
+				<rect>(0.05,0.27,1.9,1.73)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>6</Beauty>
+			<Mass>5</Mass>
+		</statBases>
+		<size>(2,1)</size>
+		<costStuffCount>30</costStuffCount>
+		<rotatable>true</rotatable>
+	</ThingDef>
+
+	<ThingDef ParentName="Anon2TableBase">
+		<defName>Anon2TableTiny</defName>
+		<label>table (tiny)</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/TableStuff/TableTiny</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.05,0.27,1.9,1.73)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+			<Mass>3</Mass>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>15</costStuffCount>
+		<rotatable>false</rotatable>
+	</ThingDef>
+
+	<ThingDef ParentName="TableBase">
+		<defName>TableShort</defName>
+		<label>table (short)</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/TableShort</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(4,4)</drawSize>
+		<damageData>
+			<rect>(0.05,0.27,1.9,1.73)</rect>
+			<cornerTL>Damage/Corner</cornerTL>
+			<cornerTR>Damage/Corner</cornerTR>
+			<cornerBL>Damage/Corner</cornerBL>
+			<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+		</statBases>
+		<size>(2,2)</size>
+		<costStuffCount>50</costStuffCount>
+		<rotatable>false</rotatable>
+	</ThingDef>	
+	
+	<ThingDef ParentName="Anon2TableBase">
+		<defName>Anon2RoundTableShort</defName>
+		<label>round table (short)</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/TableStuff/RoundedTableShort</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<rect>(0.05,0.27,1.9,1.73)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>1400</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<Mass>8</Mass>
+		</statBases>
+		<size>(2,2)</size>
+		<costStuffCount>35</costStuffCount>
+		<rotatable>false</rotatable>
+	</ThingDef>	
+	
+<!-- Large Tables -->
+	
+	<ThingDef ParentName="TableBase">
+		<defName>TableLong</defName>
+		<label>table (long)</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/TableLong</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,6)</drawSize>
+			<damageData>
+				<rectN>(0,0.27,2,3.73)</rectN>
+				<rectS>(0,0.27,2,3.73)</rectS>
+				<rectE>(0.125,0.27,3.75,1.73)</rectE>
+				<rectW>(0.125,0.27,3.75,1.73)</rectW>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>3000</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>12</Beauty>
+		</statBases>
+		<size>(2,4)</size>
+		<costStuffCount>95</costStuffCount>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
+  </ThingDef>	
+	
+	<ThingDef ParentName="Anon2TableBase">
+		<defName>Anon2RoundedTableLong</defName>
+		<label>rounded table (long)</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/TableStuff/RoundedTableLong</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,6)</drawSize>
+			<damageData>
+				<rectN>(0,0.27,2,3.73)</rectN>
+				<rectS>(0,0.27,2,3.73)</rectS>
+				<rectE>(0.125,0.27,3.75,1.73)</rectE>
+				<rectW>(0.125,0.27,3.75,1.73)</rectW>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>2950</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>12</Beauty>
+			<Mass>18</Mass>
+		</statBases>
+		<size>(2,4)</size>
+		<costStuffCount>95</costStuffCount>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+<!-- Modular Tables -->
+  
+	<ThingDef ParentName="Anon2TableSimpleSurfaceBase">
+		<defName>Anon2CounterA</defName>
+		<label>Counter</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<description>An Counter, has a large flat top.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/TableStuff/Linked/Counter_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Custom6</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Furniture/TableStuff/Linked/Counter_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>Things/Building/Furniture/TableStuff/Linked/Counter_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>2</Beauty>
+			<Mass>20</Mass>
+		</statBases>    
+		<costList>
+			<WoodLog>4</WoodLog>
+		</costList>
+		<costStuffCount>8</costStuffCount>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<blockWind>false</blockWind>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<holdsRoof>false</holdsRoof>
+		<staticSunShadowHeight>0.8</staticSunShadowHeight>
+		<blockLight>false</blockLight>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>40</pathCost>
+		<pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.65</fillPercent>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<building>
+			<isInert>true</isInert>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>1.5</multiplier>
+			</li>
+		</damageMultipliers>
+		<researchPrerequisites>
+			<li>PPCompConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>	
+	
+	<ThingDef ParentName="TableBase">
+		<defName>TableShortModular</defName>
+		<label>Modular Table</label>
+		<uiIconPath>Tables/table_menuicon</uiIconPath>	
+		<graphicData>
+			<texPath>Tables/tablelink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom1</li>
+			</linkFlags>
+		</graphicData>	
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>450</WorkToBuild>
+			<Mass>1</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>5</costStuffCount>
+		<rotatable>false</rotatable>
+		<placingDraggableDimensions>2</placingDraggableDimensions>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<researchPrerequisites>
+			<li>PPCompConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+</Buildings>

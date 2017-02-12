@@ -1,0 +1,218 @@
+<Buildings>
+
+<!-- Planters -->
+	
+	<ThingDef ParentName="FurnitureBase">
+		<defName>PlantPot</defName>
+		<label>round planter</label>
+		<thingClass>Building_PlantGrower</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/PlantPot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.20</fillPercent>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>495</WorkToBuild>
+			<Mass>2</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<description>Plant decorative flowers here to improve the mood of people nearby.</description>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<fertility>1.0</fertility>
+		<designationHotKey>Misc9</designationHotKey>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<building>
+			<defaultPlantToGrow>PlantDaylily</defaultPlantToGrow>
+			<sowTag>Decorative</sowTag>
+		</building>
+		<rotatable>false</rotatable>
+		<researchPrerequisites>
+			<li>PPConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="FurnitureBase">
+        <defName>LT_SquarePlantPot</defName>
+        <label>square planter</label>
+        <description>Plant decorative flowers here to improve the mood of people nearby.</description>
+        <thingClass>Building_PlantGrower</thingClass>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>495</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>15</costStuffCount>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.20</fillPercent>
+        <passability>PassThroughOnly</passability>
+        <fertility>1.0</fertility>
+        <rotatable>false</rotatable>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <building>
+            <defaultPlantToGrow>PlantRose</defaultPlantToGrow>
+            <sowTag>Decorative</sowTag>
+        </building>
+        <comps>
+            <li Class="CompProperties_Forbiddable" />
+        </comps>
+        <graphicData>
+            <texPath>Things/Building/squarepot</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+            <shadowData>
+                <volume>(0.3, 0.6, 0.3)</volume>
+            </shadowData>
+        </graphicData>
+		<researchPrerequisites>
+			<li>PPConstruction</li>
+		</researchPrerequisites>
+    </ThingDef>	
+	
+	<ThingDef ParentName="Anon2FurnitureBase">
+		<defName>ANON2SquarePlantPot</defName>
+		<label>angled planter</label>
+		<thingClass>Building_PlantGrower</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/FurnitureBasic/SquarePlantPot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.20</fillPercent>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>495</WorkToBuild>
+			<Mass>2</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<description>Plant decorative flowers here to improve the mood of people nearby.</description>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<fertility>1.0</fertility>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<building>
+			<defaultPlantToGrow>PlantDaylily</defaultPlantToGrow>
+			<sowTag>Decorative</sowTag>
+		</building>
+		<rotatable>false</rotatable>
+		<researchPrerequisites>
+			<li>PPConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="Anon2BuildingBase">
+		<defName>Anon2PlantSpot</defName>
+		<label>modular planter</label>
+		<thingClass>Building_PlantGrower</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Furniture/FurnitureBasic/Linked/PlantSpot_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Custom5</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Furniture/FurnitureBasic/Linked/PlantSpot_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
+			<uiIconPath>Things/Building/Furniture/FurnitureBasic/Linked/PlantSpot_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>110</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>    
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<description>A large flat pot for decorative flowers.</description>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>false</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<coversFloor>false</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<holdsRoof>false</holdsRoof>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+		<blockLight>false</blockLight>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<PathCost>10</PathCost>
+        <fertility>1.0</fertility>
+		<building>
+			<isInert>true</isInert>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+			<defaultPlantToGrow>PlantDaylily</defaultPlantToGrow>
+			<sowTag>Decorative</sowTag>
+		</building>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>1.25</multiplier>
+			</li>
+		</damageMultipliers>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>PPCompConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+</Buildings>

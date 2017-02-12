@@ -1,0 +1,457 @@
+<Buildings>
+
+<!-- Single Beds -->
+  
+	<ThingDef ParentName="BedBase">
+		<defName>Bed</defName>
+		<Label>bed</Label>
+		<Description>A cozy mattress and sheets on a frame for resting.</Description>
+		<graphicData>
+			<texPath>Things/Building/Bed</texPath>
+		</graphicData>
+	</ThingDef>
+  
+	<ThingDef ParentName="BedBase">
+		<defName>BedRed</defName>
+		<Label>bed (red)</Label>
+		<Description>A cozy mattress and red sheets on a frame for resting.</Description>
+		<graphicData>
+			<texPath>Things/Building/BedRed</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BedBase">
+		<defName>BedYellow</defName>
+		<Label>bed (yellow)</Label>
+		<Description>A cozy mattress and yellow sheets on a frame for resting.</Description>
+		<graphicData>
+			<texPath>Things/Building/BedYellow</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BedBase">
+		<defName>BedGreen</defName>
+		<Label>bed (green)</Label>
+		<Description>A cozy mattress and green sheets on a frame for resting.</Description>
+		<graphicData>
+			<texPath>Things/Building/BedGreen</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BedBase">
+		<defName>BedBlue</defName>
+		<Label>bed (blue)</Label>
+		<Description>A cozy mattress and blue sheets on a frame for resting.</Description>
+		<graphicData>
+			<texPath>Things/Building/BedBlue</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BedBase">
+		<defName>BedPurple</defName>
+		<Label>bed (purple)</Label>
+		<Description>A cozy mattress and purple sheets on a frame for resting.</Description>
+		<graphicData>
+			<texPath>Things/Building/BedPurple</texPath>
+		</graphicData>
+	</ThingDef> 
+  
+<!-- Double Beds -->
+  
+	<ThingDef ParentName="DoubleBedBase">
+		<defName>DoubleBed</defName>
+		<Label>double bed</Label>
+		<Description>A simple double-wide bed that fits two people.</Description>
+		<graphicData>
+			<texPath>Things/Building/DoubleBed</texPath>
+		</graphicData>
+	</ThingDef>
+  
+	<ThingDef ParentName="DoubleBedBase">
+		<defName>DoubleBedRed</defName>
+		<Label>double bed (red)</Label>
+		<Description>A simple double-wide bed that fits two people. Red sheets.</Description>
+		<graphicData>
+			<texPath>Things/Building/DoubleBedRed</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DoubleBedBase">
+		<defName>DoubleBedYellow</defName>
+		<Label>double bed (yellow)</Label>
+		<Description>A simple double-wide bed that fits two people. Yellow sheets.</Description>
+		<graphicData>
+			<texPath>Things/Building/DoubleBedYellow</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="DoubleBedBase">
+		<defName>DoubleBedGreen</defName>
+		<Label>double bed (green)</Label>
+		<Description>A simple double-wide bed that fits two people. Green sheets.</Description>
+		<graphicData>
+			<texPath>Things/Building/DoubleBedGreen</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="DoubleBedBase">
+		<defName>DoubleBedBlue</defName>
+		<Label>double bed (blue)</Label>
+		<Description>A simple double-wide bed that fits two people. Blue sheets.</Description>
+		<graphicData>
+			<texPath>Things/Building/DoubleBedBlue</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="DoubleBedBase">
+		<defName>DoubleBedPurple</defName>
+		<Label>double bed (purple)</Label>
+		<Description>A simple double-wide bed that fits two people. Purple sheets.</Description>
+		<graphicData>
+			<texPath>Things/Building/DoubleBedPurple</texPath>
+		</graphicData>
+	</ThingDef>  
+  
+ <!-- Royal Beds --> 
+  
+	<ThingDef ParentName="RoyalBedBase">
+		<defName>RoyalBed</defName>
+		<label>royal bed</label>
+		<Description>A luxurious gold-inlaid bed fit for the highborn. Very comfy and beautiful. Fits two.</Description>
+		<graphicData>
+			<texPath>Things/Building/RoyalBedRed</texPath>
+		</graphicData>
+	</ThingDef> 
+  
+	<ThingDef ParentName="RoyalBedBase">
+		<defName>RoyalBedRed</defName>
+		<label>royal bed (red)</label>
+		<Description>A luxurious bed fit for the highborn, topped with crisp red sheets.</Description>
+		<graphicData>
+			<texPath>Things/Building/RoyalBedRed</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="RoyalBedBase">
+		<defName>RoyalBedYellow</defName>
+		<label>royal bed (yellow)</label>
+		<Description>A luxurious bed fit for the highborn, topped with crisp yellow sheets.</Description>
+		<graphicData>
+			<texPath>Things/Building/RoyalBedYellow</texPath>
+		</graphicData>
+	</ThingDef>
+		
+	<ThingDef ParentName="RoyalBedBase">
+		<defName>RoyalBedRedGreen</defName>
+		<label>royal bed (green)</label>
+		<Description>A luxurious bed fit for the highborn, topped with crisp green sheets.</Description>
+		<graphicData>
+			<texPath>Things/Building/RoyalBedGreen</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="RoyalBedBase">
+		<defName>RoyalBedRedBlue</defName>
+		<label>royal bed (blue)</label>
+		<Description>A luxurious bed fit for the highborn, topped with crisp blue sheets.</Description>
+		<graphicData>
+			<texPath>Things/Building/RoyalBedBlue</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="RoyalBedBase">
+		<defName>RoyalBedRedPurple</defName>
+		<label>royal bed (purple)</label>
+		<Description>A luxurious bed fit for the highborn, topped with crisp purple sheets.</Description>
+		<graphicData>
+			<texPath>Things/Building/RoyalBedPurple</texPath>
+		</graphicData>
+	</ThingDef>  
+  
+ <!-- Hospital Beds --> 
+  
+	<ThingDef ParentName="FurnitureBase">
+		<defName>HospitalBed</defName>
+		<label>hospital bed</label>
+		<Description>A bed specially designed for injured people. Improves chance of successful medical work.</Description>
+		<ThingClass>Building_Bed</ThingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Bed/HospitalBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>2850</WorkToBuild>
+			<Mass>45</Mass>
+			<Flammability>1.0</Flammability>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<Comfort>0.80</Comfort>
+			<ImmunityGainSpeedFactor>1.144</ImmunityGainSpeedFactor>
+			<MedicalTendQualityOffset>0.10</MedicalTendQualityOffset>
+		</statBases>
+		<Size>(1,2)</Size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<Steel>80</Steel>
+			<Medicine>10</Medicine>
+		</costList>
+		<building>
+			<Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+			<bed_healPerDay>12</bed_healPerDay>
+			<bed_defaultMedical>true</bed_defaultMedical>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ANON2Dresser</li>
+					<li>ANON2EndTable</li>
+					<li>ANON2EndTableLight</li>				
+					<li>sd_medicaddons_medieval_surg_washpan</li>  
+					<li>sd_medicaddons_medieval_surg_instruments</li>
+					<li>sd_medicaddons_medieval_surg_lamp</li>
+					<li>sd_medicaddons_industrial_surg_instruments</li>
+					<li>sd_medicaddons_industrial_surg_lamp</li>
+					<li>VitalsMonitor</li>
+					<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+					<li>sd_medicaddons_spacer_surg_instruments</li>
+					<li>sd_medicaddons_spacer_surg_lamp</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+		<fillPercent>0.4</fillPercent>
+		<PathCost>60</PathCost>
+		<LeaveResourcesWhenKilled>True</LeaveResourcesWhenKilled>
+		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+		<CastEdgeShadows>True</CastEdgeShadows>
+		<designationHotkey>Misc5</designationHotkey>
+		<Passability>PassThroughOnly</Passability>
+		<DrawGUIOverlay>True</DrawGUIOverlay>
+		<researchPrerequisites><li>HospitalBed</li></researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>  
+  
+ <!-- Guest Beds --> 
+  
+	<ThingDef ParentName="FurnitureBase">
+		<defName>GuestBed</defName>
+		<label>guest bed</label>
+		<Description>A place for guests to sleep during their stay.</Description>
+		<ThingClass>Hospitality.Building_GuestBed</ThingClass>
+		<graphicData>
+			<texPath>Things/Building/Bed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,4)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<WorkToBuild>870</WorkToBuild>
+			<Mass>50</Mass>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<Comfort>0.75</Comfort>
+			<ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+		</statBases>
+		<Size>(1,2)</Size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<building>
+			<Bed_ShowSleeperBody>False</Bed_ShowSleeperBody>
+			<bed_healPerDay>7</bed_healPerDay>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ANON2Dresser</li>
+					<li>ANON2EndTable</li>
+					<li>ANON2EndTableLight</li>				
+					<li>sd_medicaddons_medieval_surg_washpan</li>  
+					<li>sd_medicaddons_medieval_surg_instruments</li>
+					<li>sd_medicaddons_medieval_surg_lamp</li>
+					<li>sd_medicaddons_industrial_surg_instruments</li>
+					<li>sd_medicaddons_industrial_surg_lamp</li>
+					<li>VitalsMonitor</li>
+					<li>sd_medicaddons_spacer_surg_vitalsmonitor</li>
+					<li>sd_medicaddons_spacer_surg_instruments</li>
+					<li>sd_medicaddons_spacer_surg_lamp</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+		<fillPercent>0.4</fillPercent>
+		<PathCost>60</PathCost>
+		<StaticSunShadowHeight>0.17</StaticSunShadowHeight>
+		<CastEdgeShadows>True</CastEdgeShadows>
+		<Passability>PassThroughOnly</Passability>
+		<DrawGUIOverlay>True</DrawGUIOverlay>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<costList>
+			<Cloth>12</Cloth>
+		</costList>
+		<researchPrerequisites>
+			<li>PPConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+<!-- Animal Beds -->	
+	
+	<ThingDef ParentName="FurnitureBase">
+		<defName>AnimalSleepingBox</defName>
+		<ThingClass>Building_Bed</ThingClass>
+		<label>animal sleeping box</label>
+		<description>A small box for animals to sleep in. Fits smaller animals like chickens, cats, or small dogs.</description>
+		<rotatable>false</rotatable>
+		<fillPercent>0.25</fillPercent>
+		<PathCost>40</PathCost>
+		<CastEdgeShadows>true</CastEdgeShadows>
+		<Passability>PassThroughOnly</Passability>
+		<graphicData>
+			<texPath>Things/Building/Misc/AnimalBed/AnimalSleepBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.05,0.05,0.9,0.9)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+		</graphicData>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<building>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_maxBodySize>0.55</bed_maxBodySize>
+			<bed_ShowSleeperBody>true</bed_ShowSleeperBody>
+			<bed_healPerDay>7</bed_healPerDay>
+		</building>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>120</WorkToBuild>
+			<Mass>3</Mass>
+			<BedRestEffectiveness>0.93</BedRestEffectiveness>
+			<Comfort>0.60</Comfort>
+			<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>PPConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>	
+	
+	<ThingDef ParentName="FurnitureBase">
+		<defName>AnimalBed</defName>
+		<ThingClass>Building_Bed</ThingClass>
+		<label>animal bed</label>
+		<description>A soft bed for animals to sleep on. Fits any animal.</description>
+		<rotatable>false</rotatable>
+		<fillPercent>0.25</fillPercent>
+		<PathCost>40</PathCost>
+		<CastEdgeShadows>true</CastEdgeShadows>
+		<Passability>PassThroughOnly</Passability>
+		<graphicData>
+			<texPath>Things/Building/Misc/AnimalBed/AnimalBed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+		<building>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_ShowSleeperBody>true</bed_ShowSleeperBody>
+			<bed_healPerDay>7</bed_healPerDay>
+		</building>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<Comfort>0.75</Comfort>
+			<ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>PPUpholstery</li>
+		</researchPrerequisites>
+	</ThingDef>	
+	
+	<ThingDef ParentName="FurnitureBase">
+		<defName>BarnStall</defName>
+		<ThingClass>Building_Bed</ThingClass>
+		<label>barn stall</label>
+		<description>A stall for your barn animals. Fits any animal.</description>
+		<rotatable>true</rotatable>
+		<PathCost>40</PathCost>
+		<CastEdgeShadows>true</CastEdgeShadows>
+		<graphicData>
+			<texPath>Things/Building/BarnStall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.1,2.1</drawSize>
+		</graphicData>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<Size>(2,2)</Size>
+		<building>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_ShowSleeperBody>true</bed_ShowSleeperBody>
+			<bed_healPerDay>10</bed_healPerDay>
+		</building>
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>600</WorkToBuild>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<Comfort>0.95</Comfort>
+			<ImmunityGainSpeedFactor>1.5</ImmunityGainSpeedFactor>
+		</statBases>
+		<designationCategory>Furniture</designationCategory>
+		<researchPrerequisites>
+			<li>PPConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+</Buildings>

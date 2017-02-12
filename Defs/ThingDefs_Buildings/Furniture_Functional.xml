@@ -1,0 +1,491 @@
+<Buildings>
+
+<!-- Bedroom Items -->
+	
+	<ThingDef ParentName="Anon2FurnitureBase">
+		<defName>ANON2Dresser</defName>
+		<label>dresser</label>
+		<thingClass>Building_Storage</thingClass>
+		<description>A place for colonist to store personal belongings. When placed with a bed it will increase comfort and rest effectiveness slightly.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/BedroomStuff/Dresser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(2,1)</size>
+		<building>
+			<preventDeterioration>true</preventDeterioration>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Preferred</priority>
+				<filter>
+					<categories>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>900</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<Mass>30</Mass>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<BedRestEffectiveness>0.06</BedRestEffectiveness>
+					<Comfort>0.1</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<PathCost>80</PathCost>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="Anon2FurnitureBase">
+		<defName>ANON2EndTable</defName>
+		<label>end table</label>
+		<thingClass>Building_Storage</thingClass>
+		<description>This small table goes well with a bed. When placed with a bed it will increase comfort and rest effectiveness slightly.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/BedroomStuff/EndTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.15,0.15,1.7,1.7)</rect>
+			</damageData>
+		</graphicData>
+		<size>(1,1)</size>
+		<building>
+			<preventDeterioration>true</preventDeterioration>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+			<priority>Preferred</priority>
+				<filter>
+					<categories>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<Mass>15</Mass>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<BedRestEffectiveness>0.02</BedRestEffectiveness>
+					<Comfort>0.05</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<PathCost>70</PathCost>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>	
+	
+	<ThingDef ParentName="Anon2FurnitureBase">
+		<defName>ANON2EndTableLight</defName>
+		<label>end table light</label>
+		<thingClass>Building_Storage</thingClass>
+		<description>This small table goes well with a bed. When placed with a bed it will increase comfort and rest effectiveness slightly. Includes a lamp.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/BedroomStuff/EndTableLight</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.15,0.15,1.7,1.7)</rect>
+			</damageData>
+		</graphicData>
+		<size>(1,1)</size>
+		<building>
+			<preventDeterioration>true</preventDeterioration>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Preferred</priority>
+					<filter>
+						<categories>
+							<li>Apparel</li>
+						</categories>
+					</filter>
+			</defaultStorageSettings>
+		</building>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>12</Beauty>
+			<Mass>18</Mass>
+		</statBases>
+		<costList>
+			<Steel>10</Steel>
+			<LargeCircularGlass>1</LargeCircularGlass>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Facility">       
+				<statOffsets>			
+					<BedRestEffectiveness>0.02</BedRestEffectiveness>			
+					<Comfort>0.05</Comfort>
+				</statOffsets>        
+				<maxSimultaneous>1</maxSimultaneous>    
+			</li>     
+			<li Class="CompProperties_Power">        
+				<compClass>CompPowerTrader</compClass>        
+				<basePowerConsumption>50</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>    
+			</li>      
+			<li Class="CompProperties_Flickable"/>     
+				<li>      
+					<compClass>CompQuality</compClass>      
+				</li>     
+				<li Class="CompProperties_Glower">
+					<glowRadius>8</glowRadius>        
+					<glowColor>(217,217,208,0)</glowColor>     
+				</li>         
+        </comps>
+        <PathCost>70</PathCost>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
+		<surfaceType>Item</surfaceType>
+		<designationCategory>ANON2MF</designationCategory>
+	</ThingDef>
+	
+<!-- Production Items -->
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ToolCabinet</defName>
+		<label>tool cabinet</label>
+		<graphicData>
+			<texPath>Things/Building/Misc/ToolCabinet</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+			<color>(96,114,95)</color>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.35</staticSunShadowHeight>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Mass>40</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>Increases work speed. Needs to be placed near workbench. One workbench can be simultaneously linked to only two tools cabinets.</description>
+		<size>(2,1)</size>
+		<costList>
+			<Steel>200</Steel>
+		</costList>
+		<designationCategory>Misc</designationCategory>
+		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.06</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>2</maxSimultaneous>
+			</li>
+		</comps>
+		<designationHotkey>Misc6</designationHotkey>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>	
+	
+	<ThingDef ParentName="Anon2NoCompQualityFurnitureBase">
+		<defName>ANON2FileCabinet</defName>
+		<label>file cabinet</label>
+		<description>A important place to store important documents about important experiments used for important research on important technologies. Increases research speed slightly when next to a research bench.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Misc/FileCabinet2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.15,0.15,1.7,1.7)</rect>
+			</damageData>
+		</graphicData>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<WorkToBuild>1200</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>2</Beauty>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<ResearchSpeedFactor>0.05</ResearchSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>
+  
+ <!-- Joy Items -->
+  
+	<ThingDef ParentName="BookStorageBase">
+		<defName>AJO_BookRack</defName>
+		<label>book rack</label>
+		<description>A small bookshelf with a few books. Can be upgraded to a bookshelf. Boosts writing speed by 5% when placed near a writing table. Only one book rack can be linked to a single writing table.</description>
+		<graphicData>
+			<texPath>Cupro/Object/Furniture/BookRack/BookRack</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<blockLight>false</blockLight>
+		<uiIconPath>Cupro/Object/Furniture/BookRack/BookRack_MenuIcon</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>20</pathCost>
+		<fillPercent>0.2</fillPercent>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<MarketValue>75</MarketValue>
+			<Beauty>10</Beauty>
+			<EntertainmentStrengthFactor>0.8</EntertainmentStrengthFactor>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<costList>
+			<AJO_PileOfBooks>1</AJO_PileOfBooks>
+		</costList>
+		<designationCategory>Joy</designationCategory>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.05</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+			<li Class="AdditionalJoyObjects.CompProperties_Upgradeable">
+				<UpgradeTex>Cupro/UI/Commands/Upgrade</UpgradeTex>
+				<BlueprintThingDef>AJO_Bookshelf</BlueprintThingDef>
+				<UpgradeDescString>Upgrade to bookshelf</UpgradeDescString>
+				<UpgradeLabelString>Upgrade</UpgradeLabelString>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BookStorageBase">
+		<defName>AJO_Bookshelf</defName>
+		<label>bookshelf</label>
+		<description>A bookshelf with a variety of books. Can be upgraded to a bookcase. Boosts writing speed by 10% when placed near a writing table. Only two bookshelves can be linked to a single writing table.</description>
+		<graphicData>
+			<texPath>Cupro/Object/Furniture/Bookshelf/Bookshelf</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<blockLight>false</blockLight>
+		<uiIconPath>Cupro/Object/Furniture/Bookshelf/Bookshelf_MenuIcon</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>40</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<MarketValue>200</MarketValue>
+			<Beauty>25</Beauty>
+			<EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<costList>
+			<AJO_PileOfBooks>1</AJO_PileOfBooks>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.1</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>2</maxSimultaneous>
+			</li>
+			<li Class="AdditionalJoyObjects.CompProperties_Upgradeable">
+				<UpgradeTex>Cupro/UI/Commands/Upgrade</UpgradeTex>
+				<BlueprintThingDef>AJO_Bookcase</BlueprintThingDef>
+				<UpgradeDescString>Upgrade to bookcase</UpgradeDescString>
+				<UpgradeLabelString>Upgrade</UpgradeLabelString>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BookStorageBase">
+		<defName>AJO_Bookcase</defName>
+		<label>bookcase</label>
+		<description>A bookcase with a wide variety of books. Boosts writing speed by 20% when placed near a writing table. Up to four bookcases can be linked to a single writing table.</description>
+		<graphicData>
+			<texPath>Cupro/Object/Furniture/Bookcase/Bookcase</texPath>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Cupro/Object/Furniture/Bookcase/Bookcase_MenuIcon</uiIconPath>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<pathCost>70</pathCost>
+		<fillPercent>0.75</fillPercent>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<MarketValue>400</MarketValue>
+			<Beauty>50</Beauty>
+			<EntertainmentStrengthFactor>1.15</EntertainmentStrengthFactor>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<costList>
+			<AJO_PileOfBooks>1</AJO_PileOfBooks>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.2</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>4</maxSimultaneous>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>ArtName_Furniture</nameMaker>
+				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+				<minQualityForArtistic>Superior</minQualityForArtistic>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<researchPrerequisites>
+			<li>PPAdvConstruction</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+</Buildings>
