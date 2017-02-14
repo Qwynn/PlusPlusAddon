@@ -13,6 +13,11 @@
 
 ### Changed
 
+## [0.16.0.3.1] - 2017-02-13
+### Changed
+- Torch lamps are now stuffed for raw wood.
+- Wall torches are now stuffed for raw wood.
+- Campfires are now stuffed for raw wood.
 
 ## [0.16.0.3] - 2017-02-11
 ### Added
