@@ -30,7 +30,7 @@
 		</statBases>
 		<selectable>true</selectable>
 		<stuffCategories>
-			<li>Woody</li>
+			<li>RawWoody</li>
 		</stuffCategories>
 		<costStuffCount>20</costStuffCount>
 		<soundImpactDefault>BulletImpactGround</soundImpactDefault>
@@ -130,7 +130,7 @@
 		</statBases>
 		<selectable>true</selectable>
 		<stuffCategories>
-			<li>Woody</li>
+			<li>RawWoody</li>
 		</stuffCategories>
 		<costStuffCount>20</costStuffCount>
 		<soundImpactDefault>BulletImpactGround</soundImpactDefault>
