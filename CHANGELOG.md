@@ -1,6 +1,6 @@
 # Change Log
 
-**Current:** [v0.16.0.3](https://github.com/Qwynn/PlusPlusAddon/releases/tag/v0.16.0.3)
+**Current:** [v0.16.0.3.1](https://github.com/Qwynn/PlusPlusAddon/releases/tag/v0.16.0.3.1)
 
 ## [Unreleased]
 ### Added
